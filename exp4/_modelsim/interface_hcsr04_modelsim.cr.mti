@@ -1,0 +1,94 @@
+D:/LabDigi/exp4/_modelsim/interface_hcrs04.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/interface_hcrs04.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04
+-- Compiling architecture interface_hcsr04_arch of interface_hcsr04
+
+} {} {}} D:/LabDigi/exp4/_modelsim/contador_cm.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp4\_modelsim\contador_cm.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_cm
+-- Compiling architecture contador_cm_arch of contador_cm
+
+} {} {}} D:/LabDigi/exp4/_modelsim/analisa_m.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/analisa_m.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity analisa_m
+-- Compiling architecture comportamental of analisa_m
+
+} {} {}} D:/LabDigi/exp4/_modelsim/interface_hcrs04_fd.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/interface_hcrs04_fd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04_fd
+-- Compiling architecture interface_hcsr04_arch of interface_hcsr04_fd
+
+} {} {}} D:/LabDigi/exp4/_modelsim/interface_hcsr04_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp4\_modelsim\interface_hcsr04_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04_tb
+-- Compiling architecture tb of interface_hcsr04_tb
+
+} {} {}} D:/LabDigi/exp4/_modelsim/contador_m.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/contador_m.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_m
+-- Compiling architecture contador_m_arch of contador_m
+
+} {} {}} D:/LabDigi/exp4/_modelsim/gerador_pulso.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/gerador_pulso.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity gerador_pulso
+-- Compiling architecture fsm_arch of gerador_pulso
+
+} {} {}} D:/LabDigi/exp4/_modelsim/contador_cm_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp4\_modelsim\contador_cm_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contador_cm_tb
+-- Compiling architecture tb of contador_cm_tb
+
+} {} {}} D:/LabDigi/exp4/_modelsim/registrador_n.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/registrador_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_n
+-- Compiling architecture registrador_n of registrador_n
+
+} {} {}} D:/LabDigi/exp4/_modelsim/contador_bcd_3digitos.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/contador_bcd_3digitos.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_bcd_3digitos
+-- Compiling architecture comportamental of contador_bcd_3digitos
+
+} {} {}} D:/LabDigi/exp4/_modelsim/interface_hcsr04_uc.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp4/_modelsim/interface_hcsr04_uc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04_uc
+-- Compiling architecture fsm_arch of interface_hcsr04_uc
+
+} {} {}}

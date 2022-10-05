@@ -1,0 +1,161 @@
+D:/LabDigi/exp5/_modelsim/exp5_trena_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/exp5_trena_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity exp5_trena_tb
+-- Compiling architecture tb of exp5_trena_tb
+
+} {} {}} D:/LabDigi/exp5/_modelsim/tx_serial_7E2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/tx_serial_7E2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tx_serial_7E2
+-- Compiling architecture tx_serial_7E2_arch of tx_serial_7E2
+
+} {} {}} D:/LabDigi/exp5/_modelsim/tx_serial_7E2_fd.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/tx_serial_7E2_fd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tx_serial_8N2_fd
+-- Compiling architecture tx_serial_8N2_fd_arch of tx_serial_8N2_fd
+
+} {} {}} D:/LabDigi/exp5/_modelsim/ascii.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/ascii.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ascii
+-- Compiling architecture comportamental of ascii
+
+} {} {}} D:/LabDigi/exp5/_modelsim/contador_cm.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/contador_cm.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_cm
+-- Compiling architecture contador_cm_arch of contador_cm
+
+} {} {}} D:/LabDigi/exp5/_modelsim/registrador_n.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/registrador_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_n
+-- Compiling architecture registrador_n of registrador_n
+
+} {} {}} D:/LabDigi/exp5/_modelsim/tx_serial_tick_uc.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/tx_serial_tick_uc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tx_serial_uc
+-- Compiling architecture tx_serial_uc_arch of tx_serial_uc
+
+} {} {}} D:/LabDigi/exp5/_modelsim/deslocador_n.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/deslocador_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity deslocador_n
+-- Compiling architecture deslocador_n_arch of deslocador_n
+
+} {} {}} D:/LabDigi/exp5/_modelsim/contador_m.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/contador_m.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_m
+-- Compiling architecture contador_m_arch of contador_m
+
+} {} {}} D:/LabDigi/exp5/_modelsim/contador_bcd_3digitos.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/contador_bcd_3digitos.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_bcd_3digitos
+-- Compiling architecture comportamental of contador_bcd_3digitos
+
+} {} {}} D:/LabDigi/exp5/_modelsim/exp5_trena_uc.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/exp5_trena_uc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity exp5_trena_uc
+-- Compiling architecture exp5_trena_uc_arch of exp5_trena_uc
+
+} {} {}} D:/LabDigi/exp5/_modelsim/interface_hcsr04_uc.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/interface_hcsr04_uc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04_uc
+-- Compiling architecture fsm_arch of interface_hcsr04_uc
+
+} {} {}} D:/LabDigi/exp5/_modelsim/hex7seg.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/hex7seg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hex7seg
+-- Compiling architecture comportamental of hex7seg
+
+} {} {}} D:/LabDigi/exp5/_modelsim/interface_hcrs04.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/interface_hcrs04.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04
+-- Compiling architecture interface_hcsr04_arch of interface_hcsr04
+
+} {} {}} D:/LabDigi/exp5/_modelsim/contador_m_modificado.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/contador_m_modificado.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_m_modificado
+-- Compiling architecture contador_m_arch of contador_m_modificado
+
+} {} {}} D:/LabDigi/exp5/_modelsim/interface_hcrs04_fd.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/interface_hcrs04_fd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity interface_hcsr04_fd
+-- Compiling architecture interface_hcsr04_arch of interface_hcsr04_fd
+
+} {} {}} D:/LabDigi/exp5/_modelsim/analisa_m.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/analisa_m.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity analisa_m
+-- Compiling architecture comportamental of analisa_m
+
+} {} {}} D:/LabDigi/exp5/_modelsim/gerador_pulso.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/gerador_pulso.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity gerador_pulso
+-- Compiling architecture fsm_arch of gerador_pulso
+
+} {} {}} D:/LabDigi/exp5/_modelsim/edge_detector.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp5/_modelsim/edge_detector.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edge_detector
+-- Compiling architecture Behavioral of edge_detector
+
+} {} {}}

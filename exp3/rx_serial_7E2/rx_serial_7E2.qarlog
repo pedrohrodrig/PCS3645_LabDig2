@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	D:/LabDigi/exp3/rx_serial_7E2/rx_serial_7E2.qarlog
+
+Archive:	D:/LabDigi/exp3/rx_serial_7E2/rx_serial_7E2.qar
+Date:		Mon Sep 12 04:14:10 2022
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/LabDigi/exp3/rx_serial_7E2/assignment_defaults.qdf
+D:/LabDigi/exp3/rx_serial_7E2/contador_m.vhd
+D:/LabDigi/exp3/rx_serial_7E2/deslocador_n.vhd
+D:/LabDigi/exp3/rx_serial_7E2/hex7seg.vhd
+D:/LabDigi/exp3/rx_serial_7E2/registrador_n.vhd
+D:/LabDigi/exp3/rx_serial_7E2/rx_serial_7E2.qpf
+D:/LabDigi/exp3/rx_serial_7E2/rx_serial_7E2.qsf
+D:/LabDigi/exp3/rx_serial_7E2/rx_serial_7E2.vhd
+D:/LabDigi/exp3/rx_serial_7E2/rx_serial_fd.vhd
+D:/LabDigi/exp3/rx_serial_7E2/rx_serial_tb.vhd
+D:/LabDigi/exp3/rx_serial_7E2/rx_serial_uc.vhd
+D:/LabDigi/exp3/rx_serial_7E2/testador_paridade.vhd
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

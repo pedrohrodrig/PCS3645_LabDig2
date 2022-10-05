@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	D:/LabDigi/exp5/Documents/2Quadri/Lab_Dig_II/Exp5/exp5_trena.qarlog
+
+Archive:	D:/LabDigi/exp5/Documents/2Quadri/Lab_Dig_II/Exp5/exp5_trena.qar
+Date:		Sun Sep 25 21:18:52 2022
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/LabDigi/exp5/Documents/2Quadri/Lab_Dig_II/Exp5/assignment_defaults.qdf
+D:/LabDigi/exp5/Documents/2Quadri/Lab_Dig_II/Exp5/exp5_trena.qpf
+D:/LabDigi/exp5/Documents/2Quadri/Lab_Dig_II/Exp5/exp5_trena.qsf
+D:/LabDigi/exp5/analisa_m.vhd
+D:/LabDigi/exp5/ascii.vhd
+D:/LabDigi/exp5/contador_bcd_3digitos.vhd
+D:/LabDigi/exp5/contador_cm.vhd
+D:/LabDigi/exp5/contador_m.vhd
+D:/LabDigi/exp5/contador_m_modificado.vhd
+D:/LabDigi/exp5/deslocador_n.vhd
+D:/LabDigi/exp5/edge_detector.vhd
+D:/LabDigi/exp5/exp4_sensor.vhd
+D:/LabDigi/exp5/exp5_trena.vhd
+D:/LabDigi/exp5/exp5_trena_fd.vhd
+D:/LabDigi/exp5/exp5_trena_tb.vhd
+D:/LabDigi/exp5/exp5_trena_uc.vhd
+D:/LabDigi/exp5/gerador_pulso.vhd
+D:/LabDigi/exp5/hex7seg.vhd
+D:/LabDigi/exp5/interface_hcrs04.vhd
+D:/LabDigi/exp5/interface_hcrs04_fd.vhd
+D:/LabDigi/exp5/interface_hcsr04_uc.vhd
+D:/LabDigi/exp5/registrador_n.vhd
+D:/LabDigi/exp5/tx_serial_7E2.vhd
+D:/LabDigi/exp5/tx_serial_7E2_fd.vhd
+D:/LabDigi/exp5/tx_serial_tick_uc.vhd
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,77 @@
+D:/LabDigi/exp3/rx_serial_7E2/_modelsim/rx_serial_uc.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_uc.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rx_serial_uc
+-- Compiling architecture rx_serial_uc_arch of rx_serial_uc
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/deslocador_n.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp3/rx_serial_7E2/_modelsim/deslocador_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity deslocador_n
+-- Compiling architecture deslocador_n_arch of deslocador_n
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/contador_m.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp3/rx_serial_7E2/_modelsim/contador_m.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_m
+-- Compiling architecture contador_m_arch of contador_m
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/rx_serial_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity rx_serial_tb
+-- Compiling architecture tb of rx_serial_tb
+-- Loading entity rx_serial_7E2
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/rx_serial_7E2.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_7E2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rx_serial_7E2
+-- Compiling architecture arch of rx_serial_7E2
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/rx_serial_fd.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_fd.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity rx_serial_fd
+-- Compiling architecture rx_serial_fd_arch of rx_serial_fd
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/hex7seg.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp3/rx_serial_7E2/_modelsim/hex7seg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hex7seg
+-- Compiling architecture comportamental of hex7seg
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/registrador_n.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp3/rx_serial_7E2/_modelsim/registrador_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_n
+-- Compiling architecture registrador_n of registrador_n
+
+} {} {}} D:/LabDigi/exp3/rx_serial_7E2/_modelsim/testador_paridade.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/LabDigi/exp3/rx_serial_7E2/_modelsim/testador_paridade.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testador_paridade
+-- Compiling architecture rtl of testador_paridade
+
+} {} {}}

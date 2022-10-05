@@ -1,0 +1,884 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/LabDigi/exp4/_modelsim
+Eanalisa_m
+Z0 w1663258470
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/LabDigi/exp5/_modelsim
+Z5 8D:/LabDigi/exp5/_modelsim/analisa_m.vhd
+Z6 FD:/LabDigi/exp5/_modelsim/analisa_m.vhd
+l0
+L21
+VzaJbOBlM>NbSQAChi7g<;1
+!s100 a7ne5OkNnHLm=Y7B1c:Cc0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1664149060
+!i10b 1
+Z9 !s108 1664149060.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/analisa_m.vhd|
+Z11 !s107 D:/LabDigi/exp5/_modelsim/analisa_m.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acomportamental
+R1
+R2
+R3
+DEx4 work 9 analisa_m 0 22 zaJbOBlM>NbSQAChi7g<;1
+l37
+L35
+VjBM=CV<@meX7@fdNhkoHX3
+!s100 9D]0@TANl0bn@Dn_W8kIF1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eascii
+Z14 w1664121408
+R2
+R3
+R4
+Z15 8D:/LabDigi/exp5/_modelsim/ascii.vhd
+Z16 FD:/LabDigi/exp5/_modelsim/ascii.vhd
+l0
+L4
+VmToDk]?MV6YU:YU1D`4Ob3
+!s100 fI`^^4?VhldRE1SlNBNlP3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/ascii.vhd|
+Z18 !s107 D:/LabDigi/exp5/_modelsim/ascii.vhd|
+!i113 1
+R12
+R13
+Acomportamental
+R2
+R3
+DEx4 work 5 ascii 0 22 mToDk]?MV6YU:YU1D`4Ob3
+l13
+L11
+V;QmX`j2d2:PCNe0YlSFFE0
+!s100 [b::<LT8Cogc3CoHmRHi62
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Econtador_bcd_3digitos
+R0
+R1
+R2
+R3
+R4
+Z19 8D:/LabDigi/exp5/_modelsim/contador_bcd_3digitos.vhd
+Z20 FD:/LabDigi/exp5/_modelsim/contador_bcd_3digitos.vhd
+l0
+L20
+VMXPTe_>EoK59Gb86hmNFF0
+!s100 nlNO7XAJN80PJC`Hl_9993
+R7
+32
+Z21 !s110 1664149061
+!i10b 1
+Z22 !s108 1664149061.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/contador_bcd_3digitos.vhd|
+Z24 !s107 D:/LabDigi/exp5/_modelsim/contador_bcd_3digitos.vhd|
+!i113 1
+R12
+R13
+Acomportamental
+R1
+R2
+R3
+DEx4 work 21 contador_bcd_3digitos 0 22 MXPTe_>EoK59Gb86hmNFF0
+l36
+L32
+VWgVI1hg?h=2Q>1S_:8XV;3
+!s100 74SzUAViHYB_4zT4>DJY_1
+R7
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R12
+R13
+Econtador_cm
+Z25 w1663470248
+R1
+R2
+R3
+R4
+Z26 8D:/LabDigi/exp5/_modelsim/contador_cm.vhd
+Z27 FD:/LabDigi/exp5/_modelsim/contador_cm.vhd
+l0
+L5
+VIkMS;Ic?7hG_oHQQJz_F82
+!s100 89ml>JXzHR[zD0fm@afQh3
+R7
+32
+R21
+!i10b 1
+R22
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/contador_cm.vhd|
+Z29 !s107 D:/LabDigi/exp5/_modelsim/contador_cm.vhd|
+!i113 1
+R12
+R13
+Acontador_cm_arch
+R1
+R2
+R3
+DEx4 work 11 contador_cm 0 22 IkMS;Ic?7hG_oHQQJz_F82
+l64
+L17
+VS@ZB=5F8zo=[D0o;Ae9MY1
+!s100 4LS_GZJiORNcG6Z9g5KhD1
+R7
+32
+R21
+!i10b 1
+R22
+R28
+R29
+!i113 1
+R12
+R13
+Econtador_m
+Z30 w1664121674
+R1
+R2
+R3
+R4
+Z31 8D:/LabDigi/exp5/_modelsim/contador_m.vhd
+Z32 FD:/LabDigi/exp5/_modelsim/contador_m.vhd
+l0
+L5
+V]F?nj5gfVbCUdF5>oDn>Y0
+!s100 WkL:hIC:4YLBA6gNzYMBL3
+R7
+32
+R21
+!i10b 1
+R22
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/contador_m.vhd|
+Z34 !s107 D:/LabDigi/exp5/_modelsim/contador_m.vhd|
+!i113 1
+R12
+R13
+Acontador_m_arch
+R1
+R2
+R3
+DEx4 work 10 contador_m 0 22 ]F?nj5gfVbCUdF5>oDn>Y0
+l21
+L19
+VJjaco06_N<`mSe2<5@PUG0
+!s100 C;::A0`OkC:FQ:SP<43De2
+R7
+32
+R21
+!i10b 1
+R22
+R33
+R34
+!i113 1
+R12
+R13
+Econtador_m_modificado
+R30
+R1
+R2
+R3
+R4
+Z35 8D:/LabDigi/exp5/_modelsim/contador_m_modificado.vhd
+Z36 FD:/LabDigi/exp5/_modelsim/contador_m_modificado.vhd
+l0
+L21
+VUogbVjXg4FHo>POY7oC3e3
+!s100 2C3WWoIfOk3SzJg;df5o22
+R7
+32
+R21
+!i10b 1
+R22
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/contador_m_modificado.vhd|
+Z38 !s107 D:/LabDigi/exp5/_modelsim/contador_m_modificado.vhd|
+!i113 1
+R12
+R13
+Acontador_m_arch
+R1
+R2
+R3
+DEx4 work 21 contador_m_modificado 0 22 UogbVjXg4FHo>POY7oC3e3
+l38
+L36
+VEeO4YZORQ^@0hS_]65M2B2
+!s100 4ga^zaczID7d:OF:99B:g3
+R7
+32
+R21
+!i10b 1
+R22
+R37
+R38
+!i113 1
+R12
+R13
+Edeslocador_n
+Z39 w1662214052
+R2
+R3
+R4
+Z40 8D:/LabDigi/exp5/_modelsim/deslocador_n.vhd
+Z41 FD:/LabDigi/exp5/_modelsim/deslocador_n.vhd
+l0
+L18
+VF_TG04YJLV09nZ583d4GT3
+!s100 Ag4;TIOS0nb1ej3Mg=;`V0
+R7
+32
+R21
+!i10b 1
+R22
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/deslocador_n.vhd|
+Z43 !s107 D:/LabDigi/exp5/_modelsim/deslocador_n.vhd|
+!i113 1
+R12
+R13
+Adeslocador_n_arch
+R2
+R3
+DEx4 work 12 deslocador_n 0 22 F_TG04YJLV09nZ583d4GT3
+l37
+L33
+Vf=GZDo[8M8hEDONP5C?G;1
+!s100 a:TDcJ6AKDE7nojz@e34Z2
+R7
+32
+R21
+!i10b 1
+R22
+R42
+R43
+!i113 1
+R12
+R13
+Eedge_detector
+Z44 w1663467966
+R2
+R3
+R4
+Z45 8D:/LabDigi/exp5/_modelsim/edge_detector.vhd
+Z46 FD:/LabDigi/exp5/_modelsim/edge_detector.vhd
+l0
+L21
+VozKagjfd]@0o0]kQ53SlN3
+!s100 9bo=TiJM^Li0Kj`>CjTf<1
+R7
+32
+R21
+!i10b 1
+R22
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/edge_detector.vhd|
+Z48 !s107 D:/LabDigi/exp5/_modelsim/edge_detector.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 13 edge_detector 0 22 ozKagjfd]@0o0]kQ53SlN3
+l31
+L29
+V`6j]4l25H_SnhMKk2;?Fl0
+!s100 V1Uj:FFU:6@Hk<fC4fP:D1
+R7
+32
+R21
+!i10b 1
+R22
+R47
+R48
+!i113 1
+R12
+R13
+Eexp4_sensor
+Z49 w1664148678
+R2
+R3
+R4
+Z50 8D:/LabDigi/exp5/_modelsim/exp4_sensor.vhd
+Z51 FD:/LabDigi/exp5/_modelsim/exp4_sensor.vhd
+l0
+L4
+VaBGSQWXR><anQ6SF6G2lb3
+!s100 LR?;D3GXl=^P<i]aIQAB53
+R7
+32
+R21
+!i10b 1
+R22
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/exp4_sensor.vhd|
+Z53 !s107 D:/LabDigi/exp5/_modelsim/exp4_sensor.vhd|
+!i113 1
+R12
+R13
+Aexp4_sensor_behavioral
+R2
+R3
+DEx4 work 11 exp4_sensor 0 22 aBGSQWXR><anQ6SF6G2lb3
+l61
+L23
+VYH_14A:Bb5CEohVKE;6cA1
+!s100 NM7T@dBfkLD1he4B]UBmf2
+R7
+32
+R21
+!i10b 1
+R22
+R52
+R53
+!i113 1
+R12
+R13
+Eexp5_trena
+Z54 w1664148994
+R2
+R3
+R4
+Z55 8D:/LabDigi/exp5/_modelsim/exp5_trena.vhd
+Z56 FD:/LabDigi/exp5/_modelsim/exp5_trena.vhd
+l0
+L4
+V<R6[GW2Ko@2lCEgFOn:<F2
+!s100 KX^8?fODi<LnL7n8JKDjf1
+R7
+32
+Z57 !s110 1664149062
+!i10b 1
+R22
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/exp5_trena.vhd|
+Z59 !s107 D:/LabDigi/exp5/_modelsim/exp5_trena.vhd|
+!i113 1
+R12
+R13
+Aexp5_trena_arch
+R2
+R3
+DEx4 work 10 exp5_trena 0 22 <R6[GW2Ko@2lCEgFOn:<F2
+l87
+L21
+V11=@U8lT=@?z]Co_4hVC82
+!s100 z5:^<XL^XlWO?ZV9Hk<Il1
+R7
+32
+R57
+!i10b 1
+R22
+R58
+R59
+!i113 1
+R12
+R13
+Eexp5_trena_fd
+Z60 w1664148808
+R2
+R3
+R4
+Z61 8D:/LabDigi/exp5/_modelsim/exp5_trena_fd.vhd
+Z62 FD:/LabDigi/exp5/_modelsim/exp5_trena_fd.vhd
+l0
+L4
+V]f=N;nB?g?nNfFF]UCZ1_3
+!s100 D`<1Za=3_nn<[zBNPS>c83
+R7
+32
+R57
+!i10b 1
+Z63 !s108 1664149062.000000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/exp5_trena_fd.vhd|
+Z65 !s107 D:/LabDigi/exp5/_modelsim/exp5_trena_fd.vhd|
+!i113 1
+R12
+R13
+Aexp5_trena_fd_arch
+R2
+R3
+DEx4 work 13 exp5_trena_fd 0 22 ]f=N;nB?g?nNfFF]UCZ1_3
+l82
+L31
+V5Xlj1C<d;b7Cghe:liDH72
+!s100 ?ne:XQfLT_gD1_HZznnJM1
+R7
+32
+R57
+!i10b 1
+R63
+R64
+R65
+!i113 1
+R12
+R13
+Eexp5_trena_tb
+Z66 w1664142854
+R2
+R3
+R4
+Z67 8D:/LabDigi/exp5/_modelsim/exp5_trena_tb.vhd
+Z68 FD:/LabDigi/exp5/_modelsim/exp5_trena_tb.vhd
+l0
+L21
+V[KblW:;2KC5Ed=8eKoj^:2
+!s100 Ah^6OcHVm5M]R;ZkD30?50
+R7
+32
+Z69 !s110 1664149063
+!i10b 1
+Z70 !s108 1664149063.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/exp5_trena_tb.vhd|
+Z72 !s107 D:/LabDigi/exp5/_modelsim/exp5_trena_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R2
+R3
+Z73 DEx4 work 13 exp5_trena_tb 0 22 [KblW:;2KC5Ed=8eKoj^:2
+l83
+L24
+Z74 V8zElmEi>2?[7kcAm1C`f;1
+Z75 !s100 a;=9Rgdb>8Gd[[gk;>Rd_0
+R7
+32
+R69
+!i10b 1
+R70
+R71
+R72
+!i113 1
+R12
+R13
+Eexp5_trena_uc
+Z76 w1664145574
+R2
+R3
+R4
+Z77 8D:/LabDigi/exp5/_modelsim/exp5_trena_uc.vhd
+Z78 FD:/LabDigi/exp5/_modelsim/exp5_trena_uc.vhd
+l0
+L4
+V9]AT87=5nTk1@_VP]]ez61
+!s100 H4Gm5FLH[;z`0UJ12nlH30
+R7
+32
+R57
+!i10b 1
+R63
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/exp5_trena_uc.vhd|
+Z80 !s107 D:/LabDigi/exp5/_modelsim/exp5_trena_uc.vhd|
+!i113 1
+R12
+R13
+Aexp5_trena_uc_arch
+R2
+R3
+DEx4 work 13 exp5_trena_uc 0 22 9]AT87=5nTk1@_VP]]ez61
+l23
+L20
+V@G_V?nD2CBKzFA;BcEJ362
+!s100 4zePN0_RLkjc7TQ1CiZ@:2
+R7
+32
+R57
+!i10b 1
+R63
+R79
+R80
+!i113 1
+R12
+R13
+Egerador_pulso
+R0
+R1
+R2
+R3
+R4
+Z81 8D:/LabDigi/exp5/_modelsim/gerador_pulso.vhd
+Z82 FD:/LabDigi/exp5/_modelsim/gerador_pulso.vhd
+l0
+L21
+VIZ=H[:b]ga0e<GRD3?BgG3
+!s100 OI5MS;@1kY1Ba<f=5U[;32
+R7
+32
+R57
+!i10b 1
+R63
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/gerador_pulso.vhd|
+Z84 !s107 D:/LabDigi/exp5/_modelsim/gerador_pulso.vhd|
+!i113 1
+R12
+R13
+Afsm_arch
+R1
+R2
+R3
+DEx4 work 13 gerador_pulso 0 22 IZ=H[:b]ga0e<GRD3?BgG3
+l41
+L35
+V8Qe^Z5@I[OAe@fPYb32G52
+!s100 ?_56g9WU7l:HodS@f0bSk2
+R7
+32
+R57
+!i10b 1
+R63
+R83
+R84
+!i113 1
+R12
+R13
+Ehex7seg
+Z85 w1664081262
+R2
+R3
+R4
+Z86 8D:/LabDigi/exp5/_modelsim/hex7seg.vhd
+Z87 FD:/LabDigi/exp5/_modelsim/hex7seg.vhd
+l0
+L20
+Vj0_CaiKZojazOm2BD58b>2
+!s100 UQDM3PVP@DC[VKmN0_Pk_1
+R7
+32
+R57
+!i10b 1
+R63
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/hex7seg.vhd|
+Z89 !s107 D:/LabDigi/exp5/_modelsim/hex7seg.vhd|
+!i113 1
+R12
+R13
+Acomportamental
+R2
+R3
+DEx4 work 7 hex7seg 0 22 j0_CaiKZojazOm2BD58b>2
+l28
+L27
+V]kDC[<mHOnaHV?0GkZf3Z0
+!s100 fAI1gUW76c3Xmj9b40>PR2
+R7
+32
+R57
+!i10b 1
+R63
+R88
+R89
+!i113 1
+R12
+R13
+Einterface_hcsr04
+Z90 w1663459166
+R2
+R3
+R4
+Z91 8D:/LabDigi/exp5/_modelsim/interface_hcrs04.vhd
+Z92 FD:/LabDigi/exp5/_modelsim/interface_hcrs04.vhd
+l0
+L4
+VY3B59LI^8cJ89;NIDRC_30
+!s100 R^5B3T[[k>NL=YD9[Qb3;2
+R7
+32
+R57
+!i10b 1
+R63
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/interface_hcrs04.vhd|
+Z94 !s107 D:/LabDigi/exp5/_modelsim/interface_hcrs04.vhd|
+!i113 1
+R12
+R13
+Ainterface_hcsr04_arch
+R2
+R3
+DEx4 work 16 interface_hcsr04 0 22 Y3B59LI^8cJ89;NIDRC_30
+l52
+L17
+V?^<5ZEKK>AMbUE>`XZ=GV1
+!s100 dC^A_`ji6bbeoYd@290HG1
+R7
+32
+R57
+!i10b 1
+R63
+R93
+R94
+!i113 1
+R12
+R13
+Einterface_hcsr04_fd
+Z95 w1663470246
+R2
+R3
+R4
+Z96 8D:/LabDigi/exp5/_modelsim/interface_hcrs04_fd.vhd
+Z97 FD:/LabDigi/exp5/_modelsim/interface_hcrs04_fd.vhd
+l0
+L4
+VDC`j[kXCgAadUg:Ra^]fL1
+!s100 1lZWMa^[4Df[cEQczQ]B^2
+R7
+32
+R57
+!i10b 1
+R63
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/interface_hcrs04_fd.vhd|
+Z99 !s107 D:/LabDigi/exp5/_modelsim/interface_hcrs04_fd.vhd|
+!i113 1
+R12
+R13
+Ainterface_hcsr04_arch
+R2
+R3
+DEx4 work 19 interface_hcsr04_fd 0 22 DC`j[kXCgAadUg:Ra^]fL1
+l62
+L17
+VFP=oz67IdgoU6MNCzZNnJ1
+!s100 _0gW3KdU?=6z4g6d7]Oge1
+R7
+32
+R57
+!i10b 1
+R63
+R98
+R99
+!i113 1
+R12
+R13
+Einterface_hcsr04_uc
+Z100 w1663456396
+R2
+R3
+R4
+Z101 8D:/LabDigi/exp5/_modelsim/interface_hcsr04_uc.vhd
+Z102 FD:/LabDigi/exp5/_modelsim/interface_hcsr04_uc.vhd
+l0
+L20
+VoEIDKzjnafKeR[8aVE6Vk1
+!s100 47Dhm01n;3dGVHdF0n<X71
+R7
+32
+R69
+!i10b 1
+R63
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/interface_hcsr04_uc.vhd|
+Z104 !s107 D:/LabDigi/exp5/_modelsim/interface_hcsr04_uc.vhd|
+!i113 1
+R12
+R13
+Afsm_arch
+R2
+R3
+DEx4 work 19 interface_hcsr04_uc 0 22 oEIDKzjnafKeR[8aVE6Vk1
+l39
+L35
+V89P8b`2hB40YPM1`OTm9O1
+!s100 JOAE84mIfaoc[:FOdP<]B2
+R7
+32
+R69
+!i10b 1
+R63
+R103
+R104
+!i113 1
+R12
+R13
+Eregistrador_n
+Z105 w1663445944
+R2
+R3
+R4
+Z106 8D:/LabDigi/exp5/_modelsim/registrador_n.vhd
+Z107 FD:/LabDigi/exp5/_modelsim/registrador_n.vhd
+l0
+L4
+Va<W7Tmn8`1Vz6WRPGTXYS1
+!s100 2om]c1n`cLPMFhn2>DDP:0
+R7
+32
+R69
+!i10b 1
+R70
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/registrador_n.vhd|
+Z109 !s107 D:/LabDigi/exp5/_modelsim/registrador_n.vhd|
+!i113 1
+R12
+R13
+Aregistrador_n
+R2
+R3
+DEx4 work 13 registrador_n 0 22 a<W7Tmn8`1Vz6WRPGTXYS1
+l19
+L17
+VSn7b=OEX?WD`4f;HG6lL=1
+!s100 >OgAQ7ID881OgClXQf@S33
+R7
+32
+R69
+!i10b 1
+R70
+R108
+R109
+!i113 1
+R12
+R13
+Etx_serial_7e2
+Z110 w1662343436
+R1
+R2
+R3
+R4
+Z111 8D:/LabDigi/exp5/_modelsim/tx_serial_7E2.vhd
+Z112 FD:/LabDigi/exp5/_modelsim/tx_serial_7E2.vhd
+l0
+L22
+V@A54NB@fH@`GcMX4Kea2n1
+!s100 AMba1RiCzKb4BV3L3f`]<1
+R7
+32
+R69
+!i10b 1
+R70
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/tx_serial_7E2.vhd|
+Z114 !s107 D:/LabDigi/exp5/_modelsim/tx_serial_7E2.vhd|
+!i113 1
+R12
+R13
+Atx_serial_7e2_arch
+R1
+R2
+R3
+DEx4 work 13 tx_serial_7e2 0 22 @A54NB@fH@`GcMX4Kea2n1
+l90
+L33
+V1S:8CQ1MT7Nn[C8jlYHO@2
+!s100 A4<_UX7`h^COL:TZKSi1E0
+R7
+32
+R69
+!i10b 1
+R70
+R113
+R114
+!i113 1
+R12
+R13
+Etx_serial_8n2_fd
+R30
+R1
+R2
+R3
+R4
+Z115 8D:/LabDigi/exp5/_modelsim/tx_serial_7E2_fd.vhd
+Z116 FD:/LabDigi/exp5/_modelsim/tx_serial_7E2_fd.vhd
+l0
+L21
+VN1nz0l4baIWV9aV]^@25Y3
+!s100 >K;0M2SBb71^?Wz7mN[eE0
+R7
+32
+R69
+!i10b 1
+R70
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/tx_serial_7E2_fd.vhd|
+Z118 !s107 D:/LabDigi/exp5/_modelsim/tx_serial_7E2_fd.vhd|
+!i113 1
+R12
+R13
+Atx_serial_8n2_fd_arch
+R1
+R2
+R3
+DEx4 work 16 tx_serial_8n2_fd 0 22 N1nz0l4baIWV9aV]^@25Y3
+l70
+L35
+VA>j5QPDWdhdVZml0Ni`KE1
+!s100 P8<CU`SU4z3W=U;;GzBl=2
+R7
+32
+R69
+!i10b 1
+R70
+R117
+R118
+!i113 1
+R12
+R13
+Etx_serial_uc
+R39
+R2
+R3
+R4
+Z119 8D:/LabDigi/exp5/_modelsim/tx_serial_tick_uc.vhd
+Z120 FD:/LabDigi/exp5/_modelsim/tx_serial_tick_uc.vhd
+l0
+L19
+VBOYXa?nQN8:_mH3EQQ:Ph0
+!s100 ?NDJHk<Vmd?CP9Tnd`0A00
+R7
+32
+R8
+!i10b 1
+R9
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp5/_modelsim/tx_serial_tick_uc.vhd|
+Z122 !s107 D:/LabDigi/exp5/_modelsim/tx_serial_tick_uc.vhd|
+!i113 1
+R12
+R13
+Atx_serial_uc_arch
+R2
+R3
+DEx4 work 12 tx_serial_uc 0 22 BOYXa?nQN8:_mH3EQQ:Ph0
+l40
+L34
+V9Z`o_@_e4_jmZRLeD1NBj3
+!s100 eZ78R4zVlTc0blFQ;imGo2
+R7
+32
+R8
+!i10b 1
+R9
+R121
+R122
+!i113 1
+R12
+R13

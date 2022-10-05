@@ -1,0 +1,142 @@
+Archive Project report for sonar
+Sun Oct 02 18:20:16 2022
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sun Oct 02 18:20:16 2022 ;
+; Revision Name          ; sonar                                 ;
+; Top-level Entity Name  ; sonar                                 ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory D:/LabDigi/exp6/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'D:/LabDigi/exp6/quartus_project/sonar.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'sonar.archive.rpt'
+Info (23030): Evaluation of Tcl script d:/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Sun Oct 02 18:20:16 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------+
+; Files Archived                                   ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; ../vhdl/analisa_m.vhd                            ;
+; ../vhdl/ascii.vhd                                ;
+; ../vhdl/contador_bcd_3digitos.vhd                ;
+; ../vhdl/contador_cm.vhd                          ;
+; ../vhdl/contador_m.vhd                           ;
+; ../vhdl/contador_m_modificado.vhd                ;
+; ../vhdl/contadorg_updown_m.vhd                   ;
+; ../vhdl/controle_servo.vhd                       ;
+; ../vhdl/deslocador_n.vhd                         ;
+; ../vhdl/edge_detector.vhd                        ;
+; ../vhdl/exp5_trena_tb.vhd                        ;
+; ../vhdl/gerador_pulso.vhd                        ;
+; ../vhdl/hex7seg.vhd                              ;
+; ../vhdl/interface_hcrs04.vhd                     ;
+; ../vhdl/interface_hcrs04_fd.vhd                  ;
+; ../vhdl/interface_hcsr04_uc.vhd                  ;
+; ../vhdl/mux_8x1_n.vhd                            ;
+; ../vhdl/registrador_n.vhd                        ;
+; ../vhdl/rom_angulos_8x24.vhd                     ;
+; ../vhdl/rx_serial_7E2.vhd                        ;
+; ../vhdl/rx_serial_fd.vhd                         ;
+; ../vhdl/rx_serial_uc.vhd                         ;
+; ../vhdl/sonar.vhd                                ;
+; ../vhdl/sonar_fd.vhd                             ;
+; ../vhdl/sonar_uc.vhd                             ;
+; ../vhdl/testador_paridade.vhd                    ;
+; ../vhdl/trena_digital.vhd                        ;
+; ../vhdl/trena_digital_fd.vhd                     ;
+; ../vhdl/trena_digital_uc.vhd                     ;
+; ../vhdl/tx_serial_7E2.vhd                        ;
+; ../vhdl/tx_serial_7E2_fd.vhd                     ;
+; ../vhdl/tx_serial_tick_uc.vhd                    ;
+; D:/LabDigi/exp6/vhdl/analisa_m.vhd               ;
+; D:/LabDigi/exp6/vhdl/ascii.vhd                   ;
+; D:/LabDigi/exp6/vhdl/contador_bcd_3digitos.vhd   ;
+; D:/LabDigi/exp6/vhdl/contador_cm.vhd             ;
+; D:/LabDigi/exp6/vhdl/contador_m.vhd              ;
+; D:/LabDigi/exp6/vhdl/contador_m_modificado.vhd   ;
+; D:/LabDigi/exp6/vhdl/contadorg_updown_m.vhd      ;
+; D:/LabDigi/exp6/vhdl/controle_servo.vhd          ;
+; D:/LabDigi/exp6/vhdl/deslocador_n.vhd            ;
+; D:/LabDigi/exp6/vhdl/edge_detector.vhd           ;
+; D:/LabDigi/exp6/vhdl/exp5_trena_tb.vhd           ;
+; D:/LabDigi/exp6/vhdl/gerador_pulso.vhd           ;
+; D:/LabDigi/exp6/vhdl/hex7seg.vhd                 ;
+; D:/LabDigi/exp6/vhdl/interface_hcrs04.vhd        ;
+; D:/LabDigi/exp6/vhdl/interface_hcrs04_fd.vhd     ;
+; D:/LabDigi/exp6/vhdl/interface_hcsr04_uc.vhd     ;
+; D:/LabDigi/exp6/vhdl/mux_8x1_n.vhd               ;
+; D:/LabDigi/exp6/vhdl/registrador_n.vhd           ;
+; D:/LabDigi/exp6/vhdl/rom_angulos_8x24.vhd        ;
+; D:/LabDigi/exp6/vhdl/rx_serial_7E2.vhd           ;
+; D:/LabDigi/exp6/vhdl/rx_serial_fd.vhd            ;
+; D:/LabDigi/exp6/vhdl/rx_serial_uc.vhd            ;
+; D:/LabDigi/exp6/vhdl/sonar.vhd                   ;
+; D:/LabDigi/exp6/vhdl/sonar_fd.vhd                ;
+; D:/LabDigi/exp6/vhdl/sonar_uc.vhd                ;
+; D:/LabDigi/exp6/vhdl/testador_paridade.vhd       ;
+; D:/LabDigi/exp6/vhdl/trena_digital.vhd           ;
+; D:/LabDigi/exp6/vhdl/trena_digital_fd.vhd        ;
+; D:/LabDigi/exp6/vhdl/trena_digital_uc.vhd        ;
+; D:/LabDigi/exp6/vhdl/tx_serial_7E2.vhd           ;
+; D:/LabDigi/exp6/vhdl/tx_serial_7E2_fd.vhd        ;
+; D:/LabDigi/exp6/vhdl/tx_serial_tick_uc.vhd       ;
+; d:/quartus/quartus/bin64/assignment_defaults.qdf ;
+; sonar.qpf                                        ;
+; sonar.qsf                                        ;
++--------------------------------------------------+
+
+

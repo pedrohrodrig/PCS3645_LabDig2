@@ -1,0 +1,25 @@
+Quartus Prime Archive log --	D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcsr04.qarlog
+
+Archive:	D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcsr04.qar
+Date:		Sat Sep 17 22:44:48 2022
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/LabDigi/exp4/interface_hcsr04_restored/analisa_m.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/assignment_defaults.qdf
+D:/LabDigi/exp4/interface_hcsr04_restored/contador_bcd_3digitos.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/contador_cm.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/contador_cm_tb.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/contador_m.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/gerador_pulso.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcrs04.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcrs04_fd.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcsr04.qpf
+D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcsr04.qsf
+D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcsr04_tb.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/interface_hcsr04_uc.vhd
+D:/LabDigi/exp4/interface_hcsr04_restored/registrador_n.vhd
+	======= Total: 14 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,368 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Quartus
+Econtador_m
+Z0 w1662837824
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/LabDigi/exp3/rx_serial_7E2/_modelsim
+Z5 8D:/LabDigi/exp3/rx_serial_7E2/_modelsim/contador_m.vhd
+Z6 FD:/LabDigi/exp3/rx_serial_7E2/_modelsim/contador_m.vhd
+l0
+L23
+VbP1LakYVb<fPKUA3PC6e50
+!s100 ]PdL^B9PA7e^:TVT@:U9B1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1662958273
+!i10b 1
+Z9 !s108 1662958273.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp3/rx_serial_7E2/_modelsim/contador_m.vhd|
+Z11 !s107 D:/LabDigi/exp3/rx_serial_7E2/_modelsim/contador_m.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acontador_m_arch
+R1
+R2
+R3
+DEx4 work 10 contador_m 0 22 bP1LakYVb<fPKUA3PC6e50
+l40
+L38
+VLcPmmkjn[a4lB4`4Jj1Vf2
+!s100 5>8_[QAPC6:7ZCf]@Q2h:1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edeslocador_n
+R0
+R2
+R3
+R4
+Z14 8D:/LabDigi/exp3/rx_serial_7E2/_modelsim/deslocador_n.vhd
+Z15 FD:/LabDigi/exp3/rx_serial_7E2/_modelsim/deslocador_n.vhd
+l0
+L18
+VF_TG04YJLV09nZ583d4GT3
+!s100 Ag4;TIOS0nb1ej3Mg=;`V0
+R7
+32
+Z16 !s110 1662958274
+!i10b 1
+Z17 !s108 1662958274.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp3/rx_serial_7E2/_modelsim/deslocador_n.vhd|
+Z19 !s107 D:/LabDigi/exp3/rx_serial_7E2/_modelsim/deslocador_n.vhd|
+!i113 1
+R12
+R13
+Adeslocador_n_arch
+R2
+R3
+DEx4 work 12 deslocador_n 0 22 F_TG04YJLV09nZ583d4GT3
+l37
+L33
+Vf=GZDo[8M8hEDONP5C?G;1
+!s100 a:TDcJ6AKDE7nojz@e34Z2
+R7
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Ehex7seg
+R0
+R2
+R3
+R4
+Z20 8D:/LabDigi/exp3/rx_serial_7E2/_modelsim/hex7seg.vhd
+Z21 FD:/LabDigi/exp3/rx_serial_7E2/_modelsim/hex7seg.vhd
+l0
+L20
+Vj0_CaiKZojazOm2BD58b>2
+!s100 UQDM3PVP@DC[VKmN0_Pk_1
+R7
+32
+R16
+!i10b 1
+R17
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp3/rx_serial_7E2/_modelsim/hex7seg.vhd|
+Z23 !s107 D:/LabDigi/exp3/rx_serial_7E2/_modelsim/hex7seg.vhd|
+!i113 1
+R12
+R13
+Acomportamental
+R2
+R3
+DEx4 work 7 hex7seg 0 22 j0_CaiKZojazOm2BD58b>2
+l28
+L27
+V]kDC[<mHOnaHV?0GkZf3Z0
+!s100 fAI1gUW76c3Xmj9b40>PR2
+R7
+32
+R16
+!i10b 1
+R17
+R22
+R23
+!i113 1
+R12
+R13
+Eregistrador_n
+R0
+R2
+R3
+R4
+Z24 8D:/LabDigi/exp3/rx_serial_7E2/_modelsim/registrador_n.vhd
+Z25 FD:/LabDigi/exp3/rx_serial_7E2/_modelsim/registrador_n.vhd
+l0
+L23
+VA1WZX]>acM]M[HFV6U;Sb1
+!s100 S2c<BaLa<zVI^5^FODd^93
+R7
+32
+R16
+!i10b 1
+R17
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp3/rx_serial_7E2/_modelsim/registrador_n.vhd|
+Z27 !s107 D:/LabDigi/exp3/rx_serial_7E2/_modelsim/registrador_n.vhd|
+!i113 1
+R12
+R13
+Aregistrador_n
+R2
+R3
+DEx4 work 13 registrador_n 0 22 A1WZX]>acM]M[HFV6U;Sb1
+l38
+L36
+VBd0?gi^jzh_HBHl4TJ;Dg1
+!s100 G_9CD[9nQWhTdkKaYS4e52
+R7
+32
+R16
+!i10b 1
+R17
+R26
+R27
+!i113 1
+R12
+R13
+Erx_serial_7e2
+Z28 w1662958256
+R2
+R3
+R4
+Z29 8D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_7E2.vhd
+Z30 FD:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_7E2.vhd
+l0
+L5
+V4@Mf6DnN0Ik]N?=jH97NF2
+!s100 LDl1C2zL;RPTZL48OQHEA3
+R7
+32
+R16
+!i10b 1
+R17
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_7E2.vhd|
+Z32 !s107 D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_7E2.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+Z33 DEx4 work 13 rx_serial_7e2 0 22 4@Mf6DnN0Ik]N?=jH97NF2
+l94
+L20
+V:dc8nz801B46fl`iQhCNo3
+!s100 ?8FM`49?NhSZkE:TZ]5LN1
+R7
+32
+R16
+!i10b 1
+R17
+R31
+R32
+!i113 1
+R12
+R13
+Erx_serial_fd
+Z34 w1662942594
+R1
+R2
+R3
+R4
+Z35 8D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_fd.vhd
+Z36 FD:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_fd.vhd
+l0
+L5
+VI>jNV^2i:ZmmGAB;0]h3W3
+!s100 FL[aPW5j:Qh`:VSn;3l333
+R7
+32
+Z37 !s110 1662958275
+!i10b 1
+Z38 !s108 1662958275.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_fd.vhd|
+Z40 !s107 D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_fd.vhd|
+!i113 1
+R12
+R13
+Arx_serial_fd_arch
+R1
+R2
+R3
+DEx4 work 12 rx_serial_fd 0 22 I>jNV^2i:ZmmGAB;0]h3W3
+l81
+L24
+VU3kiZ@Q`@eMP8SIGkNLo93
+!s100 ZjQok6HLba[A_E@0mmAD<1
+R7
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R12
+R13
+Erx_serial_tb
+Z41 w1662917856
+R1
+R2
+R3
+R4
+Z42 8D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_tb.vhd
+Z43 FD:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_tb.vhd
+l0
+L21
+V?g2;bRPA0YV]5CSGkIAIF1
+!s100 dLH:J7DRV?5LYXAkDHDMF0
+R7
+32
+R37
+!i10b 1
+R38
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_tb.vhd|
+Z45 !s107 D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R33
+R1
+R2
+R3
+DEx4 work 12 rx_serial_tb 0 22 ?g2;bRPA0YV]5CSGkIAIF1
+l94
+L24
+Vbd86n4QiJEeGR[7DTZkGT0
+!s100 K[RgoCDbcj766O006AICn3
+R7
+32
+R37
+!i10b 1
+R38
+R44
+R45
+!i113 1
+R12
+R13
+Erx_serial_uc
+Z46 w1662942518
+R2
+R3
+R4
+Z47 8D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_uc.vhd
+Z48 FD:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_uc.vhd
+l0
+L4
+VS3zB@Nd8_91IL9Dl4=2n32
+!s100 @C>J=A_`iFVh]di<KZXn[1
+R7
+32
+R37
+!i10b 1
+R38
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_uc.vhd|
+Z50 !s107 D:\LabDigi\exp3\rx_serial_7E2\_modelsim\rx_serial_uc.vhd|
+!i113 1
+R12
+R13
+Arx_serial_uc_arch
+R2
+R3
+DEx4 work 12 rx_serial_uc 0 22 S3zB@Nd8_91IL9Dl4=2n32
+l31
+L25
+VB9_Pi]Vhj9i>6zSe>TFbI2
+!s100 d0Pl8VbaFP]a2QE>NMVh32
+R7
+32
+R37
+!i10b 1
+R38
+R49
+R50
+!i113 1
+R12
+R13
+Etestador_paridade
+R0
+R2
+R3
+R4
+Z51 8D:/LabDigi/exp3/rx_serial_7E2/_modelsim/testador_paridade.vhd
+Z52 FD:/LabDigi/exp3/rx_serial_7E2/_modelsim/testador_paridade.vhd
+l0
+L26
+VYbTQddVKzG<;[JTHVaHh:3
+!s100 XIN[d3_XjCVLO:kY_[fKV3
+R7
+32
+R37
+!i10b 1
+R38
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/LabDigi/exp3/rx_serial_7E2/_modelsim/testador_paridade.vhd|
+Z54 !s107 D:/LabDigi/exp3/rx_serial_7E2/_modelsim/testador_paridade.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+Z55 DEx4 work 17 testador_paridade 0 22 YbTQddVKzG<;[JTHVaHh:3
+l36
+L35
+Z56 VVzmo@BdjG>>^V52dJN87Z1
+Z57 !s100 _QdnJ@QRaiG03KU4?DjIg3
+R7
+32
+R37
+!i10b 1
+R38
+R53
+R54
+!i113 1
+R12
+R13
