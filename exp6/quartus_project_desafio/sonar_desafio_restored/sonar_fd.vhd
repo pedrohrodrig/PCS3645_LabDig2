@@ -5,27 +5,27 @@ use ieee.math_real.all;
 
 entity sonar_fd is
     port (
-        clock           : in  std_logic;
-        reset           : in  std_logic;
-        mensurar        : in  std_logic;
-        conta_2seg      : in  std_logic;
-        conta_updown    : in  std_logic;
-        zera            : in  std_logic;
-        zera_2seg       : in  std_logic;
-        echo            : in  std_logic;
-		  entrada_serial  : in  std_logic;
-		  conta_timeout	: in  std_logic;
-		  zera_timeout		: in  std_logic;
-		  pause				: out std_logic;
-		  reinicio 			: out std_logic;
-        trigger         : out std_logic;
-        pwm             : out std_logic;
-        saida_serial    : out std_logic;
-        fim_2seg        : out std_logic;
-        fim_transmissao : out std_logic;
-		  timeout		   : out std_logic;
-		  db_estado_trena : out std_logic_vector(6 downto 0);
-		  db_estado_medida : out std_logic_vector (6 downto 0)
+        clock            : in  std_logic;
+        reset            : in  std_logic;
+        mensurar         : in  std_logic;
+        conta_2seg       : in  std_logic;
+        conta_updown     : in  std_logic;
+        zera             : in  std_logic;
+        zera_2seg        : in  std_logic;
+        echo             : in  std_logic;
+		entrada_serial   : in  std_logic;
+		conta_timeout	 : in  std_logic;
+		zera_timeout	 : in  std_logic;
+		pause			 : out std_logic;
+		reinicio 		 : out std_logic;
+        trigger          : out std_logic;
+        pwm              : out std_logic;
+        saida_serial     : out std_logic;
+        fim_2seg         : out std_logic;
+        fim_transmissao  : out std_logic;
+		timeout		     : out std_logic;
+		db_estado_trena  : out std_logic_vector(6 downto 0);
+		db_estado_medida : out std_logic_vector (6 downto 0)
     );
 end entity;
 
@@ -42,7 +42,7 @@ architecture sonar_fd_behavioral of sonar_fd is
             saida_serial      : out std_logic;
             pronto 		      : out std_logic;
             db_estado 	      : out std_logic_vector (6 downto 0);
-				db_estado_medida : out std_logic_vector (6 downto 0)
+			db_estado_medida  : out std_logic_vector (6 downto 0)
         );
     end component;
 
@@ -97,46 +97,49 @@ architecture sonar_fd_behavioral of sonar_fd is
 
     component rx_serial_7E2 is
         port (
-            clock 			  : in  std_logic;
-            reset 			  : in  std_logic;
-            dado_serial 	  : in  std_logic;
-            recebe_dado       : in  std_logic;
-            dado_recebido     : out std_logic_vector(6 downto 0);
-            tem_dado 		  : out std_logic;
-            paridade_ok 	  : out std_logic;
-            pronto  		  : out std_logic;
-            db_dado_serial    : out std_logic;
-            db_estado 		  : out std_logic_vector(3 downto 0)
+            clock 			: in  std_logic;
+            reset 			: in  std_logic;
+            dado_serial 	: in  std_logic;
+            recebe_dado     : in  std_logic;
+            dado_recebido   : out std_logic_vector(6 downto 0);
+            tem_dado 		: out std_logic;
+            paridade_ok 	: out std_logic;
+            pronto  		: out std_logic;
+            db_dado_serial  : out std_logic;
+            db_estado 		: out std_logic_vector(3 downto 0)
         );
     end component;
 
     component identificador_caractere is
         port (
-           caractere_recebido : in  std_logic_vector(6 downto 0);
-			  reset					: in  std_logic;
-			  clock					: in  std_logic;
-			  pronto					: in  std_logic;
-			  pause					: out std_logic;
-			  reinicio				: out std_logic
+            caractere_recebido : in  std_logic_vector(6 downto 0);
+			reset			   : in  std_logic;
+			clock			   : in  std_logic;
+			pronto			   : in  std_logic;
+			pause			   : out std_logic;
+			reinicio		   : out std_logic
         );
     end component;
 
     signal s_angulo            : std_logic_vector (23 downto 0);
 	signal s_contagem_endereco : std_logic_vector (2 downto 0);
     signal s_dado_recebido     : std_logic_vector (6 downto 0);
-    signal s_pronto, s_pause, s_reinicio : std_logic;
-	 signal s_zera_trena, s_timeout : std_logic;
+    signal s_pronto            : std_logic; 
+    signal s_pause             : std_logic;
+    signal s_reinicio          : std_logic;
+	signal s_zera_trena        : std_logic; 
+    signal s_timeout           : std_logic;
 
 begin
 
     ID: identificador_caractere
     port map (
         caractere_recebido => s_dado_recebido,
-        reset => reset,
-		  clock => clock,
-		  pronto => s_pronto,
-		  pause => s_pause,
-		  reinicio => s_reinicio
+        reset              => reset,
+		clock              => clock,
+		pronto             => s_pronto,
+		pause              => s_pause,
+		reinicio           => s_reinicio
     );
 
     RX: rx_serial_7E2
@@ -155,16 +158,16 @@ begin
     
     TRENA: trena_digital
     port map (
-        clock 	     => clock,
-        reset 		 => reset,
-        mensurar 	 => mensurar,
-        echo 		 => echo,
-        angulo       => s_angulo,
-        trigger 	 => trigger,
-        saida_serial => saida_serial,
-        pronto 		 => fim_transmissao,
-        db_estado 	 => db_estado_trena,
-		  db_estado_medida => db_estado_medida
+        clock 	         => clock,
+        reset 		     => reset,
+        mensurar 	     => mensurar,
+        echo 		     => echo,
+        angulo           => s_angulo,
+        trigger 	     => trigger,
+        saida_serial     => saida_serial,
+        pronto 		     => fim_transmissao,
+        db_estado 	     => db_estado_trena,
+		db_estado_medida => db_estado_medida
     );
 
     ROM_ANG: rom_angulos_8x24
@@ -214,7 +217,7 @@ begin
 	
 	CONT_TIMEOUT: contador_m
 	generic map(
-		M => 50000000, -- 2 segundos
+		M => 50000000, -- 1 segundo
 		N => 26
 	)
 	port map(
@@ -225,8 +228,8 @@ begin
 		fim   => s_timeout 
 	);
 	
-	pause <= s_pause; 
+	pause    <= s_pause; 
 	reinicio <= s_reinicio;
-	timeout <= s_timeout;
+	timeout  <= s_timeout;
 	
 end architecture sonar_fd_behavioral;
