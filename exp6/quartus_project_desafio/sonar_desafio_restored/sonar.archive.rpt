@@ -1,0 +1,112 @@
+Archive Project report for sonar
+Fri Oct 07 18:53:16 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Fri Oct 07 18:53:16 2022 ;
+; Revision Name          ; sonar                                 ;
+; Top-level Entity Name  ; sonar                                 ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_desafio_depuracao_top.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'sonar.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Fri Oct 07 18:53:16 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------+
+; Files Archived              ;
++-----------------------------+
+; File Name                   ;
++-----------------------------+
+; analisa_m.vhd               ;
+; ascii.vhd                   ;
+; assignment_defaults.qdf     ;
+; contador_bcd_3digitos.vhd   ;
+; contador_cm.vhd             ;
+; contador_m.vhd              ;
+; contador_m_modificado.vhd   ;
+; contadorg_updown_m.vhd      ;
+; controle_servo.vhd          ;
+; deslocador_n.vhd            ;
+; edge_detector.vhd           ;
+; exp5_trena_tb.vhd           ;
+; gerador_pulso.vhd           ;
+; hex7seg.vhd                 ;
+; identificador_caractere.vhd ;
+; interface_hcrs04.vhd        ;
+; interface_hcrs04_fd.vhd     ;
+; interface_hcsr04_uc.vhd     ;
+; mux_8x1_n.vhd               ;
+; registrador_n.vhd           ;
+; rom_angulos_8x24.vhd        ;
+; rx_serial_7E2.vhd           ;
+; rx_serial_fd.vhd            ;
+; rx_serial_uc.vhd            ;
+; sonar.qpf                   ;
+; sonar.qsf                   ;
+; sonar.vhd                   ;
+; sonar_fd.vhd                ;
+; sonar_uc.vhd                ;
+; testador_paridade.vhd       ;
+; trena_digital.vhd           ;
+; trena_digital_fd.vhd        ;
+; trena_digital_uc.vhd        ;
+; tx_serial_7E2.vhd           ;
+; tx_serial_7E2_fd.vhd        ;
+; tx_serial_tick_uc.vhd       ;
++-----------------------------+
+
+

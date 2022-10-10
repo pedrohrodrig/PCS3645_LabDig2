@@ -1,0 +1,55 @@
+
+State Machine - |sonar|sonar_uc:UC|Eatual
+Name Eatual.pausado Eatual.final Eatual.muda_servomotor Eatual.medir_e_transmitir Eatual.prepara_trena Eatual.espera_temporizador Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 0 1 1 
+Eatual.espera_temporizador 0 0 0 0 0 1 0 1 
+Eatual.prepara_trena 0 0 0 0 1 0 0 1 
+Eatual.medir_e_transmitir 0 0 0 1 0 0 0 1 
+Eatual.muda_servomotor 0 0 1 0 0 0 0 1 
+Eatual.final 0 1 0 0 0 0 0 1 
+Eatual.pausado 1 0 0 0 0 0 0 1 
+
+State Machine - |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_uc:U1_UC|Eatual
+Name Eatual.final Eatual.transmissao Eatual.espera Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 
+Eatual.preparacao 0 0 0 1 1 
+Eatual.espera 0 0 1 0 1 
+Eatual.transmissao 0 1 0 0 1 
+Eatual.final 1 0 0 0 1 
+
+State Machine - |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_uc:UC|Eatual
+Name Eatual.final Eatual.armazenamento Eatual.medida Eatual.espera_echo Eatual.envia_trigger Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 1 1 
+Eatual.envia_trigger 0 0 0 0 1 0 1 
+Eatual.espera_echo 0 0 0 1 0 0 1 
+Eatual.medida 0 0 1 0 0 0 1 
+Eatual.armazenamento 0 1 0 0 0 0 1 
+Eatual.final 1 0 0 0 0 0 1 
+
+State Machine - |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|gerador_pulso:gerador|reg_estado
+Name reg_estado.final reg_estado.contagem reg_estado.parado 
+reg_estado.parado 0 0 0 
+reg_estado.contagem 0 1 1 
+reg_estado.final 1 0 1 
+
+State Machine - |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_uc:UC|Eatual
+Name Eatual.reinicio Eatual.final Eatual.fim_transmitir Eatual.transmitir Eatual.prepara_transmitir Eatual.medir Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 0 1 1 
+Eatual.medir 0 0 0 0 0 1 0 1 
+Eatual.prepara_transmitir 0 0 0 0 1 0 0 1 
+Eatual.transmitir 0 0 0 1 0 0 0 1 
+Eatual.fim_transmitir 0 0 1 0 0 0 0 1 
+Eatual.final 0 1 0 0 0 0 0 1 
+Eatual.reinicio 1 0 0 0 0 0 0 1 
+
+State Machine - |sonar|sonar_fd:FD|rx_serial_7E2:RX|rx_serial_uc:U1_UC|Eatual
+Name Eatual.final Eatual.recepcao Eatual.espera Eatual.preparacao Eatual.reinicio Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 
+Eatual.reinicio 0 0 0 0 1 1 
+Eatual.preparacao 0 0 0 1 0 1 
+Eatual.espera 0 0 1 0 0 1 
+Eatual.recepcao 0 1 0 0 0 1 
+Eatual.final 1 0 0 0 0 1 

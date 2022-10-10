@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "trigger",
+					"strict" : false
+				},
+				{
+					"name" : "pwm",
+					"strict" : false
+				},
+				{
+					"name" : "saida_serial",
+					"strict" : false
+				},
+				{
+					"name" : "fim_posicao",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_trigger",
+					"strict" : false
+				},
+				{
+					"name" : "db_echo",
+					"strict" : false
+				},
+				{
+					"name" : "db_pause",
+					"strict" : false
+				},
+				{
+					"name" : "db_ligar",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_trena[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_medida[6]",
+					"strict" : false
+				},
+				{
+					"name" : "echo",
+					"strict" : false
+				},
+				{
+					"name" : "ligar",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "entrada_serial",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

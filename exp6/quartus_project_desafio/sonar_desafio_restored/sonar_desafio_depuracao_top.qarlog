@@ -1,0 +1,47 @@
+Quartus Prime Archive log --	D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_desafio_depuracao_top.qarlog
+
+Archive:	D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_desafio_depuracao_top.qar
+Date:		Fri Oct 07 18:53:15 2022
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/analisa_m.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/ascii.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/assignment_defaults.qdf
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_bcd_3digitos.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_m.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_m_modificado.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contadorg_updown_m.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/controle_servo.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/deslocador_n.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/edge_detector.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/exp5_trena_tb.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/gerador_pulso.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/hex7seg.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/identificador_caractere.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04_fd.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcsr04_uc.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/mux_8x1_n.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/registrador_n.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rom_angulos_8x24.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_7E2.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_uc.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.qpf
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.qsf
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_uc.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/testador_paridade.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_uc.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2_fd.vhd
+D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_tick_uc.vhd
+	======= Total: 36 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
