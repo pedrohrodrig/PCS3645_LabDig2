@@ -3,22 +3,25 @@ use ieee.std_logic_1164.all;
 
 entity sonar is
     port (
-        clock            : in  std_logic;
-        reset            : in  std_logic;
-        ligar            : in  std_logic;
-        echo             : in  std_logic;
-		entrada_serial   : in  std_logic;
-        trigger          : out std_logic;
-        pwm              : out std_logic;
-        saida_serial     : out std_logic;
-        fim_posicao      : out std_logic;
-        db_estado        : out std_logic_vector(6 downto 0);
-		db_trigger       : out std_logic;
-        db_echo          : out std_logic;
-        db_pause         : out std_logic;
-		db_ligar         : out std_logic;
-		db_estado_trena  : out std_logic_vector(6 downto 0);
-		db_estado_medida : out std_logic_vector (6 downto 0)
+        clock                 : in  std_logic;
+        reset                 : in  std_logic;
+        ligar                 : in  std_logic;
+        echo                  : in  std_logic;
+		entrada_serial        : in  std_logic;
+        trigger               : out std_logic;
+        pwm                   : out std_logic;
+        saida_serial          : out std_logic;
+        fim_posicao           : out std_logic;
+        db_estado             : out std_logic_vector(6 downto 0);
+		db_trigger            : out std_logic;
+        db_echo               : out std_logic;
+        db_pause              : out std_logic;
+		db_ligar              : out std_logic;
+		db_estado_trena       : out std_logic_vector (6 downto 0);
+		db_estado_medida      : out std_logic_vector (6 downto 0);
+        db_estado_transmissor : out std_logic_vector (6 downto 0);
+        db_estado_receptor    : out std_logic_vector (6 downto 0);
+        db_posicao_servomotor : out std_logic_vector (6 downto 0)
     );
 end entity;
 
@@ -46,7 +49,10 @@ architecture sonar_behavioral of sonar is
 			fim_transmissao  : out std_logic;
 			timeout		     : out std_logic;
 			db_estado_trena  : out std_logic_vector(6 downto 0);
-			db_estado_medida : out std_logic_vector (6 downto 0)
+			db_estado_medida : out std_logic_vector (6 downto 0);
+            db_estado_transmissor : out std_logic_vector (6 downto 0);
+            db_estado_receptor    : out std_logic_vector (6 downto 0);
+            db_posicao_servomotor : out std_logic_vector (6 downto 0)
         );
     end component;
 
@@ -84,11 +90,15 @@ architecture sonar_behavioral of sonar is
     signal s_conta_2seg      : std_logic;
     signal s_conta_updown    : std_logic;
     signal s_fim_transmissao : std_logic;
-    signal s_zera, s_trigger : std_logic;
+    signal s_zera            : std_logic; 
+    signal s_trigger         : std_logic;
     signal s_zera_2seg       : std_logic;
-    signal s_db_estado : std_logic_vector(3 downto 0);
-	signal s_timeout, s_conta_timeout, s_zera_timeout : std_logic;
-	signal s_pause, s_reinicio  : std_logic;
+    signal s_db_estado       : std_logic_vector(3 downto 0);
+	signal s_timeout         : std_logic;
+    signal s_conta_timeout   : std_logic;
+    signal s_zera_timeout    : std_logic;
+	signal s_pause           : std_logic;
+    signal s_reinicio        : std_logic;
     signal s_reset_via_ligar : std_logic;
 
 begin
@@ -97,27 +107,30 @@ begin
     
     FD: sonar_fd
     port map (
-        clock            => clock,
-        reset            => s_reset_via_ligary,
-		entrada_serial   => entrada_serial,
-		timeout          => s_timeout,
-		conta_timeout    => s_conta_timeout,
-		zera_timeout     => s_zera_timeout,
-        mensurar         => s_mensurar,
-        conta_2seg       => s_conta_2seg,
-        conta_updown     => s_conta_updown,
-        zera             => s_zera,
-        zera_2seg        => s_zera_2seg,
-        echo             => echo,
-        trigger          => s_trigger,
-        pwm              => pwm,
-        saida_serial     => saida_serial,
-        fim_2seg         => s_fim_2seg,
-		pause            => s_pause,
-		reinicio         => s_reinicio,
-        fim_transmissao  => s_fim_transmissao,
-		db_estado_trena  => db_estado_trena,
-		db_estado_medida => db_estado_medida
+        clock                 => clock,
+        reset                 => s_reset_via_ligar,
+		entrada_serial        => entrada_serial,
+		timeout               => s_timeout,
+		conta_timeout         => s_conta_timeout,
+		zera_timeout          => s_zera_timeout,
+        mensurar              => s_mensurar,
+        conta_2seg            => s_conta_2seg,
+        conta_updown          => s_conta_updown,
+        zera                  => s_zera,
+        zera_2seg             => s_zera_2seg,
+        echo                  => echo,
+        trigger               => s_trigger,
+        pwm                   => pwm,
+        saida_serial          => saida_serial,
+        fim_2seg              => s_fim_2seg,
+		pause                 => s_pause,
+		reinicio              => s_reinicio,
+        fim_transmissao       => s_fim_transmissao,
+		db_estado_trena       => db_estado_trena,
+		db_estado_medida      => db_estado_medida,
+        db_estado_transmissor => db_estado_transmissor,
+        db_estado_receptor    => db_estado_receptor,
+        db_posicao_servomotor => db_posicao_servomotor
     );
 
     UC: sonar_uc

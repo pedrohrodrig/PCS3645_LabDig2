@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sonar
-Fri Oct 07 18:41:52 2022
+Tue Oct 11 10:14:23 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -40,31 +40,32 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  32. Parameter Settings for User Entity Instance: sonar_fd:FD|contadorg_updown_m:CONTADOR_UPDOWN
  33. Parameter Settings for User Entity Instance: sonar_fd:FD|contador_m:CONT_SEGUNDOS
  34. Parameter Settings for User Entity Instance: sonar_fd:FD|contador_m:CONT_TIMEOUT
- 35. Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_TIMEOUT"
- 36. Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_SEGUNDOS"
- 37. Port Connectivity Checks: "sonar_fd:FD|contadorg_updown_m:CONTADOR_UPDOWN"
- 38. Port Connectivity Checks: "sonar_fd:FD|controle_servo:SERVO"
- 39. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|contador_m:contagem"
- 40. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|contador_m:U3_TICK"
- 41. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|contador_m_modificado:U2"
- 42. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1"
- 43. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor"
- 44. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|analisa_m:analisa"
- 45. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm"
- 46. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_m:contador_tick"
- 47. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|gerador_pulso:gerador"
- 48. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor"
- 49. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD"
- 50. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX"
- 51. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|contador_m:U3_TICK"
- 52. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|testador_paridade:U3"
- 53. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|contador_m:U2"
- 54. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|deslocador_n:U1"
- 55. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD"
- 56. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX"
- 57. Post-Synthesis Netlist Statistics for Top Partition
- 58. Elapsed Time Per Partition
- 59. Analysis & Synthesis Messages
+ 35. Port Connectivity Checks: "sonar_fd:FD|hex7seg:HEX_SERVOMOTOR"
+ 36. Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_TIMEOUT"
+ 37. Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_SEGUNDOS"
+ 38. Port Connectivity Checks: "sonar_fd:FD|contadorg_updown_m:CONTADOR_UPDOWN"
+ 39. Port Connectivity Checks: "sonar_fd:FD|controle_servo:SERVO"
+ 40. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|contador_m:contagem"
+ 41. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|contador_m:U3_TICK"
+ 42. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|contador_m_modificado:U2"
+ 43. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1"
+ 44. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor"
+ 45. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|analisa_m:analisa"
+ 46. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm"
+ 47. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_m:contador_tick"
+ 48. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|gerador_pulso:gerador"
+ 49. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor"
+ 50. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD"
+ 51. Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX"
+ 52. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|contador_m:U3_TICK"
+ 53. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|testador_paridade:U3"
+ 54. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|contador_m:U2"
+ 55. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|deslocador_n:U1"
+ 56. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD"
+ 57. Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX"
+ 58. Post-Synthesis Netlist Statistics for Top Partition
+ 59. Elapsed Time Per Partition
+ 60. Analysis & Synthesis Messages
 
 
 
@@ -91,14 +92,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 07 18:41:52 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 11 10:14:23 2022       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; sonar                                       ;
 ; Top-level Entity Name           ; sonar                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 235                                         ;
-; Total pins                      ; 34                                          ;
+; Total pins                      ; 55                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -259,25 +260,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 227         ;
+; Estimate of Logic utilization (ALMs needed) ; 237         ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 393         ;
+; Combinational ALUT usage for logic          ; 410         ;
 ;     -- 7 input functions                    ; 4           ;
-;     -- 6 input functions                    ; 55          ;
-;     -- 5 input functions                    ; 31          ;
-;     -- 4 input functions                    ; 67          ;
-;     -- <=3 input functions                  ; 236         ;
+;     -- 6 input functions                    ; 58          ;
+;     -- 5 input functions                    ; 32          ;
+;     -- 4 input functions                    ; 70          ;
+;     -- <=3 input functions                  ; 246         ;
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 235         ;
 ;                                             ;             ;
-; I/O pins                                    ; 34          ;
+; I/O pins                                    ; 55          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 235         ;
-; Total fan-out                               ; 2287        ;
-; Average fan-out                             ; 3.29        ;
+; Total fan-out                               ; 2391        ;
+; Average fan-out                             ; 3.17        ;
 +---------------------------------------------+-------------+
 
 
@@ -286,14 +287,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                              ; Entity Name             ; Library Name ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |sonar                                                   ; 393 (0)             ; 235 (0)                   ; 0                 ; 0          ; 34   ; 0            ; |sonar                                                                                                                                                           ; sonar                   ; work         ;
+; |sonar                                                   ; 410 (0)             ; 235 (0)                   ; 0                 ; 0          ; 55   ; 0            ; |sonar                                                                                                                                                           ; sonar                   ; work         ;
 ;    |hex7seg:HEX5|                                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|hex7seg:HEX5                                                                                                                                              ; hex7seg                 ; work         ;
-;    |sonar_fd:FD|                                         ; 374 (0)             ; 227 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD                                                                                                                                               ; sonar_fd                ; work         ;
+;    |sonar_fd:FD|                                         ; 391 (0)             ; 227 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD                                                                                                                                               ; sonar_fd                ; work         ;
 ;       |contador_m:CONT_SEGUNDOS|                         ; 33 (33)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|contador_m:CONT_SEGUNDOS                                                                                                                      ; contador_m              ; work         ;
 ;       |contador_m:CONT_TIMEOUT|                          ; 31 (31)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|contador_m:CONT_TIMEOUT                                                                                                                       ; contador_m              ; work         ;
 ;       |contadorg_updown_m:CONTADOR_UPDOWN|               ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|contadorg_updown_m:CONTADOR_UPDOWN                                                                                                            ; contadorg_updown_m      ; work         ;
-;       |controle_servo:SERVO|                             ; 100 (100)           ; 37 (37)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|controle_servo:SERVO                                                                                                                          ; controle_servo          ; work         ;
-;       |identificador_caractere:ID|                       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|identificador_caractere:ID                                                                                                                    ; identificador_caractere ; work         ;
+;       |controle_servo:SERVO|                             ; 98 (98)             ; 37 (37)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|controle_servo:SERVO                                                                                                                          ; controle_servo          ; work         ;
+;       |hex7seg:HEX_RECEPTOR|                             ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|hex7seg:HEX_RECEPTOR                                                                                                                          ; hex7seg                 ; work         ;
+;       |hex7seg:HEX_SERVOMOTOR|                           ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|hex7seg:HEX_SERVOMOTOR                                                                                                                        ; hex7seg                 ; work         ;
+;       |identificador_caractere:ID|                       ; 4 (4)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|identificador_caractere:ID                                                                                                                    ; identificador_caractere ; work         ;
 ;       |rom_angulos_8x24:ROM_ANG|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|rom_angulos_8x24:ROM_ANG                                                                                                                      ; rom_angulos_8x24        ; work         ;
 ;       |rx_serial_7E2:RX|                                 ; 33 (0)              ; 37 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|rx_serial_7E2:RX                                                                                                                              ; rx_serial_7E2           ; work         ;
 ;          |contador_m:U3_TICK|                            ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|rx_serial_7E2:RX|contador_m:U3_TICK                                                                                                           ; contador_m              ; work         ;
@@ -302,8 +305,9 @@ https://fpgasoftware.intel.com/eula.
 ;             |deslocador_n:U1|                            ; 1 (1)               ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|deslocador_n:U1                                                                                           ; deslocador_n            ; work         ;
 ;             |registrador_n:U4|                           ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|registrador_n:U4                                                                                          ; registrador_n           ; work         ;
 ;          |rx_serial_uc:U1_UC|                            ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|rx_serial_7E2:RX|rx_serial_uc:U1_UC                                                                                                           ; rx_serial_uc            ; work         ;
-;       |trena_digital:TRENA|                              ; 168 (0)             ; 94 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA                                                                                                                           ; trena_digital           ; work         ;
+;       |trena_digital:TRENA|                              ; 172 (0)             ; 94 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA                                                                                                                           ; trena_digital           ; work         ;
 ;          |hex7seg:DB_STATE_2|                            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|hex7seg:DB_STATE_2                                                                                                        ; hex7seg                 ; work         ;
+;          |hex7seg:DB_STATE_3|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|hex7seg:DB_STATE_3                                                                                                        ; hex7seg                 ; work         ;
 ;          |hex7seg:DB_STATE|                              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|hex7seg:DB_STATE                                                                                                          ; hex7seg                 ; work         ;
 ;          |mux_8x1_n:MUX|                                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX                                                                                                             ; mux_8x1_n               ; work         ;
 ;          |trena_digital_fd:FD|                           ; 138 (0)             ; 86 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD                                                                                                       ; trena_digital_fd        ; work         ;
@@ -319,10 +323,10 @@ https://fpgasoftware.intel.com/eula.
 ;                |interface_hcsr04_uc:UC|                  ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_uc:UC                                                        ; interface_hcsr04_uc     ; work         ;
 ;             |tx_serial_7E2:transmissor|                  ; 33 (0)              ; 28 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor                                                                             ; tx_serial_7E2           ; work         ;
 ;                |contador_m:U3_TICK|                      ; 11 (11)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|contador_m:U3_TICK                                                          ; contador_m              ; work         ;
-;                |tx_serial_8N2_fd:U2_FD|                  ; 17 (1)              ; 14 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD                                                      ; tx_serial_8N2_fd        ; work         ;
+;                |tx_serial_8N2_fd:U2_FD|                  ; 16 (1)              ; 14 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD                                                      ; tx_serial_8N2_fd        ; work         ;
 ;                   |contador_m_modificado:U2|             ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|contador_m_modificado:U2                             ; contador_m_modificado   ; work         ;
-;                   |deslocador_n:U1|                      ; 11 (11)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1                                      ; deslocador_n            ; work         ;
-;                |tx_serial_uc:U1_UC|                      ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_uc:U1_UC                                                          ; tx_serial_uc            ; work         ;
+;                   |deslocador_n:U1|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1                                      ; deslocador_n            ; work         ;
+;                |tx_serial_uc:U1_UC|                      ; 6 (6)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_uc:U1_UC                                                          ; tx_serial_uc            ; work         ;
 ;          |trena_digital_uc:UC|                           ; 12 (12)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_uc:UC                                                                                                       ; trena_digital_uc        ; work         ;
 ;    |sonar_uc:UC|                                         ; 12 (12)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |sonar|sonar_uc:UC                                                                                                                                               ; sonar_uc                ; work         ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
@@ -493,11 +497,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm|s_dig0[0] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm|s_dig1[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm|s_dig2[3] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1|IQ[1]                                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1|IQ[2]                                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|digito0[1]                                  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|digito1[1]                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm|s_dig2[2] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1|IQ[8]                                          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|deslocador_n:U1|IQ[9]                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|digito0[3]                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sonar|sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|digito1[3]                                  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |sonar|sonar_fd:FD|rx_serial_7E2:RX|rx_serial_uc:U1_UC|db_estado[2]                                                                                                        ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sonar|sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX|MUX_OUT[1]                                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -671,24 +676,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_TIMEOUT"                                                                     ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; meio ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|hex7seg:HEX_SERVOMOTOR" ;
++---------+-------+----------+-----------------------------------+
+; Port    ; Type  ; Severity ; Details                           ;
++---------+-------+----------+-----------------------------------+
+; hexa[3] ; Input ; Info     ; Stuck at GND                      ;
++---------+-------+----------+-----------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_SEGUNDOS"                                                                    ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; meio ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_TIMEOUT"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|contador_m:CONT_SEGUNDOS"                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -703,35 +717,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|controle_servo:SERVO"                                                         ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; db_reset   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; db_pwm     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; db_posicao ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|controle_servo:SERVO"                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; db_reset ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_pwm   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|contador_m:contagem"                                 ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; meio ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|contador_m:contagem"            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; meio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|contador_m:U3_TICK"         ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                  ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; conta ; Input  ; Info     ; Stuck at VCC                                                                                             ;
-; q     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; meio  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|contador_m:U3_TICK" ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                          ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------+
+; conta ; Input  ; Info     ; Stuck at VCC                                                                                     ;
+; q     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.              ;
+; meio  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.              ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -757,15 +770,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------+----------+-------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor"                                      ;
-+-----------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                                                  ;
-+-----------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; db_partida      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; db_saida_serial ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; db_estado       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor"                 ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; db_partida      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_saida_serial ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -793,7 +805,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                           ;
 +------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; meio ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                          ;
+; meio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                               ;
 +------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -864,14 +876,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|contador_m:U2"                                           ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; meio ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|contador_m:U2"                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------+
@@ -904,7 +916,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; tem_dado       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; paridade_ok    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; db_dado_serial ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; db_estado      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -920,22 +931,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR           ; 69                          ;
 ;     ENA CLR SCLR      ; 48                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 402                         ;
+; arriav_lcell_comb     ; 426                         ;
 ;     arith             ; 112                         ;
 ;         1 data inputs ; 112                         ;
 ;     extend            ; 4                           ;
 ;         7 data inputs ; 4                           ;
-;     normal            ; 286                         ;
-;         1 data inputs ; 19                          ;
-;         2 data inputs ; 50                          ;
-;         3 data inputs ; 64                          ;
-;         4 data inputs ; 67                          ;
-;         5 data inputs ; 31                          ;
-;         6 data inputs ; 55                          ;
-; boundary_port         ; 34                          ;
+;     normal            ; 310                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 52                          ;
+;         3 data inputs ; 72                          ;
+;         4 data inputs ; 70                          ;
+;         5 data inputs ; 32                          ;
+;         6 data inputs ; 58                          ;
+; boundary_port         ; 55                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.82                        ;
+; Average LUT depth     ; 2.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -954,7 +966,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 07 18:41:37 2022
+    Info: Processing started: Tue Oct 11 10:14:09 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sonar -c sonar
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -974,10 +986,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file trena_d
     Info (12022): Found design unit 1: trena_digital_uc-trena_digital_uc_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_uc.vhd Line: 20
     Info (12023): Found entity 1: trena_digital_uc File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_uc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file trena_digital_fd.vhd
-    Info (12022): Found design unit 1: trena_digital_fd-trena_digital_fd_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 28
+    Info (12022): Found design unit 1: trena_digital_fd-trena_digital_fd_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 29
     Info (12023): Found entity 1: trena_digital_fd File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file trena_digital.vhd
-    Info (12022): Found design unit 1: trena_digital-trena_digital_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 19
+    Info (12022): Found design unit 1: trena_digital-trena_digital_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 20
     Info (12023): Found entity 1: trena_digital File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file testador_paridade.vhd
     Info (12022): Found design unit 1: testador_paridade-rtl File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/testador_paridade.vhd Line: 35
@@ -986,10 +998,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file sonar_u
     Info (12022): Found design unit 1: sonar_uc-sonar_uc_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_uc.vhd Line: 26
     Info (12023): Found entity 1: sonar_uc File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_uc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sonar_fd.vhd
-    Info (12022): Found design unit 1: sonar_fd-sonar_fd_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 32
+    Info (12022): Found design unit 1: sonar_fd-sonar_fd_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 35
     Info (12023): Found entity 1: sonar_fd File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file sonar.vhd
-    Info (12022): Found design unit 1: sonar-sonar_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 23
+    Info (12022): Found design unit 1: sonar-sonar_behavioral File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 28
     Info (12023): Found entity 1: sonar File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file rx_serial_uc.vhd
     Info (12022): Found design unit 1: rx_serial_uc-rx_serial_uc_arch File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_uc.vhd Line: 24
@@ -1058,43 +1070,42 @@ Info (12021): Found 2 design units, including 1 entities, in source file analisa
     Info (12022): Found design unit 1: analisa_m-comportamental File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/analisa_m.vhd Line: 35
     Info (12023): Found entity 1: analisa_m File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/analisa_m.vhd Line: 21
 Info (12127): Elaborating entity "sonar" for the top level hierarchy
-Info (12128): Elaborating entity "sonar_fd" for hierarchy "sonar_fd:FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 93
-Info (12128): Elaborating entity "identificador_caractere" for hierarchy "sonar_fd:FD|identificador_caractere:ID" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 132
-Info (12128): Elaborating entity "rx_serial_7E2" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 142
+Info (12128): Elaborating entity "sonar_fd" for hierarchy "sonar_fd:FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 108
+Info (12128): Elaborating entity "identificador_caractere" for hierarchy "sonar_fd:FD|identificador_caractere:ID" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 151
+Info (12128): Elaborating entity "rx_serial_7E2" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 161
 Info (12128): Elaborating entity "rx_serial_uc" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_uc:U1_UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_7E2.vhd Line: 96
 Info (12128): Elaborating entity "rx_serial_fd" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_7E2.vhd Line: 115
-Info (12128): Elaborating entity "deslocador_n" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|deslocador_n:U1" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 85
-Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|contador_m:U2" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 99
-Info (12128): Elaborating entity "testador_paridade" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|testador_paridade:U3" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 112
-Info (12128): Elaborating entity "registrador_n" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|registrador_n:U4" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 120
+Info (12128): Elaborating entity "deslocador_n" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|deslocador_n:U1" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 86
+Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|contador_m:U2" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 100
+Info (12128): Elaborating entity "testador_paridade" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|testador_paridade:U3" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 114
+Info (12128): Elaborating entity "registrador_n" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|rx_serial_fd:U2_FD|registrador_n:U4" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_fd.vhd Line: 122
 Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|rx_serial_7E2:RX|contador_m:U3_TICK" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/rx_serial_7E2.vhd Line: 136
-Info (12128): Elaborating entity "trena_digital" for hierarchy "sonar_fd:FD|trena_digital:TRENA" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 156
-Info (12128): Elaborating entity "mux_8x1_n" for hierarchy "sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 133
-Info (12128): Elaborating entity "trena_digital_uc" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_uc:UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 150
-Info (12128): Elaborating entity "trena_digital_fd" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 165
-Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 77
+Info (12128): Elaborating entity "trena_digital" for hierarchy "sonar_fd:FD|trena_digital:TRENA" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 175
+Info (12128): Elaborating entity "mux_8x1_n" for hierarchy "sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 136
+Info (12128): Elaborating entity "trena_digital_uc" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_uc:UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 153
+Info (12128): Elaborating entity "trena_digital_fd" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 168
+Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 83
 Info (12128): Elaborating entity "interface_hcsr04_fd" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04.vhd Line: 61
 Info (12128): Elaborating entity "gerador_pulso" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|gerador_pulso:gerador" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04_fd.vhd Line: 66
 Info (12128): Elaborating entity "registrador_n" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|registrador_n:registrador" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04_fd.vhd Line: 79
 Info (12128): Elaborating entity "contador_cm" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04_fd.vhd Line: 92
-Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_m:contador_tick" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd Line: 68
-Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd Line: 81
-Info (12128): Elaborating entity "analisa_m" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|analisa_m:analisa" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd Line: 92
+Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_m:contador_tick" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd Line: 69
+Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|contador_bcd_3digitos:contador_cm" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd Line: 83
+Info (12128): Elaborating entity "analisa_m" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_fd:FD|contador_cm:contador|analisa_m:analisa" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/contador_cm.vhd Line: 94
 Info (12128): Elaborating entity "interface_hcsr04_uc" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|interface_hcsr04:sensor|interface_hcsr04_uc:UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/interface_hcrs04.vhd Line: 73
-Info (12128): Elaborating entity "tx_serial_7E2" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 91
-Info (12128): Elaborating entity "tx_serial_uc" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_uc:U1_UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2.vhd Line: 92
-Info (12128): Elaborating entity "tx_serial_8N2_fd" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2.vhd Line: 107
+Info (12128): Elaborating entity "tx_serial_7E2" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 97
+Info (12128): Elaborating entity "tx_serial_uc" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_uc:U1_UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2.vhd Line: 94
+Info (12128): Elaborating entity "tx_serial_8N2_fd" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2.vhd Line: 109
 Info (12128): Elaborating entity "contador_m_modificado" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|tx_serial_7E2:transmissor|tx_serial_8N2_fd:U2_FD|contador_m_modificado:U2" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/tx_serial_7E2_fd.vhd Line: 102
-Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|contador_m:contagem" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 101
-Info (12128): Elaborating entity "hex7seg" for hierarchy "sonar_fd:FD|trena_digital:TRENA|hex7seg:DB_STATE" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 188
-Info (12128): Elaborating entity "ascii" for hierarchy "sonar_fd:FD|trena_digital:TRENA|ascii:DADO0" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 201
-Info (12128): Elaborating entity "rom_angulos_8x24" for hierarchy "sonar_fd:FD|rom_angulos_8x24:ROM_ANG" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 170
-Info (12128): Elaborating entity "controle_servo" for hierarchy "sonar_fd:FD|controle_servo:SERVO" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 176
-Info (12128): Elaborating entity "contadorg_updown_m" for hierarchy "sonar_fd:FD|contadorg_updown_m:CONTADOR_UPDOWN" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 187
-Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|contador_m:CONT_SEGUNDOS" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 202
-Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|contador_m:CONT_TIMEOUT" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 215
-Info (12128): Elaborating entity "sonar_uc" for hierarchy "sonar_uc:UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 118
-Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|trena_digital:TRENA|trena_digital_fd:FD|contador_m:contagem" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital_fd.vhd Line: 110
+Info (12128): Elaborating entity "hex7seg" for hierarchy "sonar_fd:FD|trena_digital:TRENA|hex7seg:DB_STATE" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 192
+Info (12128): Elaborating entity "ascii" for hierarchy "sonar_fd:FD|trena_digital:TRENA|ascii:DADO0" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/trena_digital.vhd Line: 210
+Info (12128): Elaborating entity "rom_angulos_8x24" for hierarchy "sonar_fd:FD|rom_angulos_8x24:ROM_ANG" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 190
+Info (12128): Elaborating entity "controle_servo" for hierarchy "sonar_fd:FD|controle_servo:SERVO" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 196
+Info (12128): Elaborating entity "contadorg_updown_m" for hierarchy "sonar_fd:FD|contadorg_updown_m:CONTADOR_UPDOWN" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 207
+Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|contador_m:CONT_SEGUNDOS" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 222
+Info (12128): Elaborating entity "contador_m" for hierarchy "sonar_fd:FD|contador_m:CONT_TIMEOUT" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar_fd.vhd Line: 236
+Info (12128): Elaborating entity "sonar_uc" for hierarchy "sonar_uc:UC" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 136
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[16]" is converted into an equivalent circuit using register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[16]~_emulated" and latch "sonar_fd:FD|controle_servo:SERVO|largura_pwm[16]~1" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/controle_servo.vhd Line: 32
     Warning (13310): Register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[15]" is converted into an equivalent circuit using register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[15]~_emulated" and latch "sonar_fd:FD|controle_servo:SERVO|largura_pwm[15]~5" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/controle_servo.vhd Line: 32
@@ -1112,17 +1123,19 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[3]" is converted into an equivalent circuit using register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[3]~_emulated" and latch "sonar_fd:FD|controle_servo:SERVO|largura_pwm[3]~53" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/controle_servo.vhd Line: 32
     Warning (13310): Register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[2]" is converted into an equivalent circuit using register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[2]~_emulated" and latch "sonar_fd:FD|controle_servo:SERVO|largura_pwm[2]~57" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/controle_servo.vhd Line: 32
     Warning (13310): Register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[1]" is converted into an equivalent circuit using register "sonar_fd:FD|controle_servo:SERVO|largura_pwm[1]~_emulated" and latch "sonar_fd:FD|controle_servo:SERVO|largura_pwm[1]~61" File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/controle_servo.vhd Line: 32
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "db_estado_transmissor[1]" is stuck at GND File: D:/LabDigi/PCS3645_LabDigi2_2022/exp6/quartus_project_desafio/sonar_desafio_restored/sonar.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 449 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 487 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 415 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Fri Oct 07 18:41:52 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (21059): Implemented 50 output pins
+    Info (21061): Implemented 432 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Tue Oct 11 10:14:23 2022
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 

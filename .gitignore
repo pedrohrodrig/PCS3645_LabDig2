@@ -1,0 +1,10 @@
+*
+!*/
+!readme.md
+!.gitattributes
+!.gitignore
+!*.vhd
+!*.qar 
+!*.png
+!*.jpg
+!*.jpeg

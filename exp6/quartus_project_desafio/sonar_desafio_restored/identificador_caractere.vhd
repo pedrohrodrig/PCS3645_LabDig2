@@ -30,7 +30,7 @@ begin
 				pause <= '0';
 				reinicio <= '0'; 
 			elsif clock'event and clock = '1' then
-				if pronto = '1' zthen 
+				if pronto = '1' and (s_pause = '1' or s_reinicio = '1') then 
 					pause <= s_pause;
 					reinicio <= s_reinicio;
 				end if;

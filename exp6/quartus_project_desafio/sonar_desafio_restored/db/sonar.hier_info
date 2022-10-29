@@ -1,10 +1,11 @@
 |sonar
 clock => sonar_fd:FD.clock
 clock => sonar_uc:UC.clock
-reset => sonar_fd:FD.reset
+reset => s_reset_via_ligar.IN0
 reset => sonar_uc:UC.reset
 ligar => sonar_uc:UC.ligar
 ligar => db_ligar.DATAIN
+ligar => s_reset_via_ligar.IN1
 echo => sonar_fd:FD.echo
 echo => db_echo.DATAIN
 entrada_serial => sonar_fd:FD.entrada_serial
@@ -37,6 +38,27 @@ db_estado_medida[3] <= sonar_fd:FD.db_estado_medida[3]
 db_estado_medida[4] <= sonar_fd:FD.db_estado_medida[4]
 db_estado_medida[5] <= sonar_fd:FD.db_estado_medida[5]
 db_estado_medida[6] <= sonar_fd:FD.db_estado_medida[6]
+db_estado_transmissor[0] <= sonar_fd:FD.db_estado_transmissor[0]
+db_estado_transmissor[1] <= sonar_fd:FD.db_estado_transmissor[1]
+db_estado_transmissor[2] <= sonar_fd:FD.db_estado_transmissor[2]
+db_estado_transmissor[3] <= sonar_fd:FD.db_estado_transmissor[3]
+db_estado_transmissor[4] <= sonar_fd:FD.db_estado_transmissor[4]
+db_estado_transmissor[5] <= sonar_fd:FD.db_estado_transmissor[5]
+db_estado_transmissor[6] <= sonar_fd:FD.db_estado_transmissor[6]
+db_estado_receptor[0] <= sonar_fd:FD.db_estado_receptor[0]
+db_estado_receptor[1] <= sonar_fd:FD.db_estado_receptor[1]
+db_estado_receptor[2] <= sonar_fd:FD.db_estado_receptor[2]
+db_estado_receptor[3] <= sonar_fd:FD.db_estado_receptor[3]
+db_estado_receptor[4] <= sonar_fd:FD.db_estado_receptor[4]
+db_estado_receptor[5] <= sonar_fd:FD.db_estado_receptor[5]
+db_estado_receptor[6] <= sonar_fd:FD.db_estado_receptor[6]
+db_posicao_servomotor[0] <= sonar_fd:FD.db_posicao_servomotor[0]
+db_posicao_servomotor[1] <= sonar_fd:FD.db_posicao_servomotor[1]
+db_posicao_servomotor[2] <= sonar_fd:FD.db_posicao_servomotor[2]
+db_posicao_servomotor[3] <= sonar_fd:FD.db_posicao_servomotor[3]
+db_posicao_servomotor[4] <= sonar_fd:FD.db_posicao_servomotor[4]
+db_posicao_servomotor[5] <= sonar_fd:FD.db_posicao_servomotor[5]
+db_posicao_servomotor[6] <= sonar_fd:FD.db_posicao_servomotor[6]
 
 
 |sonar|sonar_fd:FD
@@ -82,6 +104,27 @@ db_estado_medida[3] <= trena_digital:TRENA.db_estado_medida[3]
 db_estado_medida[4] <= trena_digital:TRENA.db_estado_medida[4]
 db_estado_medida[5] <= trena_digital:TRENA.db_estado_medida[5]
 db_estado_medida[6] <= trena_digital:TRENA.db_estado_medida[6]
+db_estado_transmissor[0] <= trena_digital:TRENA.db_estado_transmissor[0]
+db_estado_transmissor[1] <= trena_digital:TRENA.db_estado_transmissor[1]
+db_estado_transmissor[2] <= trena_digital:TRENA.db_estado_transmissor[2]
+db_estado_transmissor[3] <= trena_digital:TRENA.db_estado_transmissor[3]
+db_estado_transmissor[4] <= trena_digital:TRENA.db_estado_transmissor[4]
+db_estado_transmissor[5] <= trena_digital:TRENA.db_estado_transmissor[5]
+db_estado_transmissor[6] <= trena_digital:TRENA.db_estado_transmissor[6]
+db_estado_receptor[0] <= hex7seg:HEX_RECEPTOR.sseg[0]
+db_estado_receptor[1] <= hex7seg:HEX_RECEPTOR.sseg[1]
+db_estado_receptor[2] <= hex7seg:HEX_RECEPTOR.sseg[2]
+db_estado_receptor[3] <= hex7seg:HEX_RECEPTOR.sseg[3]
+db_estado_receptor[4] <= hex7seg:HEX_RECEPTOR.sseg[4]
+db_estado_receptor[5] <= hex7seg:HEX_RECEPTOR.sseg[5]
+db_estado_receptor[6] <= hex7seg:HEX_RECEPTOR.sseg[6]
+db_posicao_servomotor[0] <= hex7seg:HEX_SERVOMOTOR.sseg[0]
+db_posicao_servomotor[1] <= hex7seg:HEX_SERVOMOTOR.sseg[1]
+db_posicao_servomotor[2] <= hex7seg:HEX_SERVOMOTOR.sseg[2]
+db_posicao_servomotor[3] <= hex7seg:HEX_SERVOMOTOR.sseg[3]
+db_posicao_servomotor[4] <= hex7seg:HEX_SERVOMOTOR.sseg[4]
+db_posicao_servomotor[5] <= hex7seg:HEX_SERVOMOTOR.sseg[5]
+db_posicao_servomotor[6] <= hex7seg:HEX_SERVOMOTOR.sseg[6]
 
 
 |sonar|sonar_fd:FD|identificador_caractere:ID
@@ -103,8 +146,7 @@ reset => reinicio~reg0.ACLR
 reset => pause~reg0.ACLR
 clock => reinicio~reg0.CLK
 clock => pause~reg0.CLK
-pronto => reinicio~reg0.ENA
-pronto => pause~reg0.ENA
+pronto => process_0.IN1
 pause <= pause~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reinicio <= reinicio~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -427,6 +469,13 @@ db_estado_medida[3] <= hex7seg:DB_STATE_2.sseg[3]
 db_estado_medida[4] <= hex7seg:DB_STATE_2.sseg[4]
 db_estado_medida[5] <= hex7seg:DB_STATE_2.sseg[5]
 db_estado_medida[6] <= hex7seg:DB_STATE_2.sseg[6]
+db_estado_transmissor[0] <= hex7seg:DB_STATE_3.sseg[0]
+db_estado_transmissor[1] <= hex7seg:DB_STATE_3.sseg[1]
+db_estado_transmissor[2] <= hex7seg:DB_STATE_3.sseg[2]
+db_estado_transmissor[3] <= hex7seg:DB_STATE_3.sseg[3]
+db_estado_transmissor[4] <= hex7seg:DB_STATE_3.sseg[4]
+db_estado_transmissor[5] <= hex7seg:DB_STATE_3.sseg[5]
+db_estado_transmissor[6] <= hex7seg:DB_STATE_3.sseg[6]
 
 
 |sonar|sonar_fd:FD|trena_digital:TRENA|mux_8x1_n:MUX
@@ -590,6 +639,10 @@ db_estado_medida[0] <= interface_hcsr04:sensor.db_estado[0]
 db_estado_medida[1] <= interface_hcsr04:sensor.db_estado[1]
 db_estado_medida[2] <= interface_hcsr04:sensor.db_estado[2]
 db_estado_medida[3] <= interface_hcsr04:sensor.db_estado[3]
+db_estado_transmissor[0] <= tx_serial_7E2:transmissor.db_estado[0]
+db_estado_transmissor[1] <= tx_serial_7E2:transmissor.db_estado[1]
+db_estado_transmissor[2] <= tx_serial_7E2:transmissor.db_estado[2]
+db_estado_transmissor[3] <= tx_serial_7E2:transmissor.db_estado[3]
 db_medir <= interface_hcsr04:sensor.db_medir
 db_echo <= echo.DB_MAX_OUTPUT_PORT_TYPE
 db_trigger <= interface_hcsr04:sensor.trigger
@@ -1263,6 +1316,44 @@ sseg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 sseg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|sonar|sonar_fd:FD|trena_digital:TRENA|hex7seg:DB_STATE_3
+hexa[0] => Mux0.IN19
+hexa[0] => Mux1.IN19
+hexa[0] => Mux2.IN19
+hexa[0] => Mux3.IN19
+hexa[0] => Mux4.IN19
+hexa[0] => Mux5.IN19
+hexa[0] => Mux6.IN19
+hexa[1] => Mux0.IN18
+hexa[1] => Mux1.IN18
+hexa[1] => Mux2.IN18
+hexa[1] => Mux3.IN18
+hexa[1] => Mux4.IN18
+hexa[1] => Mux5.IN18
+hexa[1] => Mux6.IN18
+hexa[2] => Mux0.IN17
+hexa[2] => Mux1.IN17
+hexa[2] => Mux2.IN17
+hexa[2] => Mux3.IN17
+hexa[2] => Mux4.IN17
+hexa[2] => Mux5.IN17
+hexa[2] => Mux6.IN17
+hexa[3] => Mux0.IN16
+hexa[3] => Mux1.IN16
+hexa[3] => Mux2.IN16
+hexa[3] => Mux3.IN16
+hexa[3] => Mux4.IN16
+hexa[3] => Mux5.IN16
+hexa[3] => Mux6.IN16
+sseg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sseg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sseg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sseg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sseg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sseg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sseg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |sonar|sonar_fd:FD|trena_digital:TRENA|ascii:DADO0
 dado[0] => saida[0].DATAIN
 dado[1] => saida[1].DATAIN
@@ -1732,27 +1823,103 @@ fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 meio <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|sonar|sonar_fd:FD|hex7seg:HEX_RECEPTOR
+hexa[0] => Mux0.IN19
+hexa[0] => Mux1.IN19
+hexa[0] => Mux2.IN19
+hexa[0] => Mux3.IN19
+hexa[0] => Mux4.IN19
+hexa[0] => Mux5.IN19
+hexa[0] => Mux6.IN19
+hexa[1] => Mux0.IN18
+hexa[1] => Mux1.IN18
+hexa[1] => Mux2.IN18
+hexa[1] => Mux3.IN18
+hexa[1] => Mux4.IN18
+hexa[1] => Mux5.IN18
+hexa[1] => Mux6.IN18
+hexa[2] => Mux0.IN17
+hexa[2] => Mux1.IN17
+hexa[2] => Mux2.IN17
+hexa[2] => Mux3.IN17
+hexa[2] => Mux4.IN17
+hexa[2] => Mux5.IN17
+hexa[2] => Mux6.IN17
+hexa[3] => Mux0.IN16
+hexa[3] => Mux1.IN16
+hexa[3] => Mux2.IN16
+hexa[3] => Mux3.IN16
+hexa[3] => Mux4.IN16
+hexa[3] => Mux5.IN16
+hexa[3] => Mux6.IN16
+sseg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sseg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sseg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sseg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sseg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sseg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sseg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sonar|sonar_fd:FD|hex7seg:HEX_SERVOMOTOR
+hexa[0] => Mux0.IN19
+hexa[0] => Mux1.IN19
+hexa[0] => Mux2.IN19
+hexa[0] => Mux3.IN19
+hexa[0] => Mux4.IN19
+hexa[0] => Mux5.IN19
+hexa[0] => Mux6.IN19
+hexa[1] => Mux0.IN18
+hexa[1] => Mux1.IN18
+hexa[1] => Mux2.IN18
+hexa[1] => Mux3.IN18
+hexa[1] => Mux4.IN18
+hexa[1] => Mux5.IN18
+hexa[1] => Mux6.IN18
+hexa[2] => Mux0.IN17
+hexa[2] => Mux1.IN17
+hexa[2] => Mux2.IN17
+hexa[2] => Mux3.IN17
+hexa[2] => Mux4.IN17
+hexa[2] => Mux5.IN17
+hexa[2] => Mux6.IN17
+hexa[3] => Mux0.IN16
+hexa[3] => Mux1.IN16
+hexa[3] => Mux2.IN16
+hexa[3] => Mux3.IN16
+hexa[3] => Mux4.IN16
+hexa[3] => Mux5.IN16
+hexa[3] => Mux6.IN16
+sseg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sseg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sseg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sseg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sseg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sseg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sseg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |sonar|sonar_uc:UC
 clock => Eatual~1.DATAIN
 reset => process_0.IN0
 ligar => Selector0.IN3
-ligar => Eprox.inicial.DATAB
+ligar => Eprox.DATAB
 ligar => process_0.IN1
 fim_2seg => Selector2.IN3
 fim_2seg => Selector1.IN2
 fim_transmissao => Eprox.OUTPUTSELECT
 fim_transmissao => Eprox.OUTPUTSELECT
-fim_transmissao => Eprox.muda_servomotor.DATAB
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
-pause => Eatual.OUTPUTSELECT
+fim_transmissao => Eprox.DATAB
+pause => Eprox.inicial.OUTPUTSELECT
+pause => Eprox.preparacao.OUTPUTSELECT
+pause => Eprox.espera_temporizador.OUTPUTSELECT
+pause => Eprox.prepara_trena.OUTPUTSELECT
+pause => Eprox.medir_e_transmitir.OUTPUTSELECT
+pause => Eprox.muda_servomotor.OUTPUTSELECT
+pause => Eprox.final.OUTPUTSELECT
+pause => Eprox.pausado.OUTPUTSELECT
 reinicio => Selector0.IN4
-reinicio => Eprox.pausado.DATAB
+reinicio => Eprox.DATAB
 timeout => Eprox.DATAA
 timeout => Eprox.DATAA
 zera <= zera.DB_MAX_OUTPUT_PORT_TYPE

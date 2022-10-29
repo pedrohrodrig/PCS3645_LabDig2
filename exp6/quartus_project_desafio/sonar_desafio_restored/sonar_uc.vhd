@@ -50,10 +50,6 @@ begin
 
     process(ligar, fim_2seg, fim_transmissao, timeout, reinicio, pause, Eatual)
     begin
-        if pause = '1' then
-            Eprox <= pausado;
-        end if;
-
         case Eatual is
             when inicial =>             if ligar = '1' then Eprox <= preparacao;
                                         else                Eprox <= inicial;
@@ -80,6 +76,10 @@ begin
 										else                   Eprox <= pausado;
 										end if;
         end case;
+		  
+		  if pause = '1' then
+            Eprox <= pausado;
+        end if;
     end process;
 
     -- Saída de controle

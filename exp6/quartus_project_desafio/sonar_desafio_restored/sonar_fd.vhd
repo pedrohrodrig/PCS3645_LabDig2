@@ -5,27 +5,30 @@ use ieee.math_real.all;
 
 entity sonar_fd is
     port (
-        clock            : in  std_logic;
-        reset            : in  std_logic;
-        mensurar         : in  std_logic;
-        conta_2seg       : in  std_logic;
-        conta_updown     : in  std_logic;
-        zera             : in  std_logic;
-        zera_2seg        : in  std_logic;
-        echo             : in  std_logic;
-		entrada_serial   : in  std_logic;
-		conta_timeout	 : in  std_logic;
-		zera_timeout	 : in  std_logic;
-		pause			 : out std_logic;
-		reinicio 		 : out std_logic;
-        trigger          : out std_logic;
-        pwm              : out std_logic;
-        saida_serial     : out std_logic;
-        fim_2seg         : out std_logic;
-        fim_transmissao  : out std_logic;
-		timeout		     : out std_logic;
-		db_estado_trena  : out std_logic_vector(6 downto 0);
-		db_estado_medida : out std_logic_vector (6 downto 0)
+        clock                 : in  std_logic;
+        reset                 : in  std_logic;
+        mensurar              : in  std_logic;
+        conta_2seg            : in  std_logic;
+        conta_updown          : in  std_logic;
+        zera                  : in  std_logic;
+        zera_2seg             : in  std_logic;
+        echo                  : in  std_logic;
+		entrada_serial        : in  std_logic;
+		conta_timeout	      : in  std_logic;
+		zera_timeout	      : in  std_logic;
+		pause			      : out std_logic;
+		reinicio 		      : out std_logic;
+        trigger               : out std_logic;
+        pwm                   : out std_logic;
+        saida_serial          : out std_logic;
+        fim_2seg              : out std_logic;
+        fim_transmissao       : out std_logic;
+		timeout		          : out std_logic;
+		db_estado_trena       : out std_logic_vector (6 downto 0);
+		db_estado_medida      : out std_logic_vector (6 downto 0);
+        db_estado_transmissor : out std_logic_vector (6 downto 0);
+        db_estado_receptor    : out std_logic_vector (6 downto 0);
+        db_posicao_servomotor : out std_logic_vector (6 downto 0)
     );
 end entity;
 
@@ -33,16 +36,17 @@ architecture sonar_fd_behavioral of sonar_fd is
     
     component trena_digital is
         port (
-            clock 		      : in  std_logic;
-            reset 		      : in  std_logic;
-            mensurar 	      : in  std_logic;
-            echo 		      : in  std_logic;
-            angulo            : in  std_logic_vector(23 downto 0);
-            trigger 	      : out std_logic;
-            saida_serial      : out std_logic;
-            pronto 		      : out std_logic;
-            db_estado 	      : out std_logic_vector (6 downto 0);
-			db_estado_medida  : out std_logic_vector (6 downto 0)
+            clock 			      : in  std_logic;
+		    reset 		          : in  std_logic;
+		    mensurar 		      : in  std_logic;
+		    echo 			      : in  std_logic;
+		    angulo                : in  std_logic_vector(23 downto 0);
+		    trigger 		      : out std_logic;
+		    saida_serial  	      : out std_logic;
+		    pronto 			      : out std_logic;
+		    db_estado 		      : out std_logic_vector (6 downto 0);
+		    db_estado_medida      : out std_logic_vector (6 downto 0);
+		    db_estado_transmissor : out std_logic_vector (6 downto 0)
         );
     end component;
 
@@ -91,7 +95,9 @@ architecture sonar_fd_behavioral of sonar_fd is
 			zera  : in  std_logic;
 			conta : in  std_logic;
 			Q     : out std_logic_vector (N-1 downto 0);
-			fim   : out std_logic
+			fim   : out std_logic;
+			meio  : out std_logic
+
 		);
 	end component;
 
@@ -121,14 +127,24 @@ architecture sonar_fd_behavioral of sonar_fd is
         );
     end component;
 
-    signal s_angulo            : std_logic_vector (23 downto 0);
-	signal s_contagem_endereco : std_logic_vector (2 downto 0);
-    signal s_dado_recebido     : std_logic_vector (6 downto 0);
-    signal s_pronto            : std_logic; 
-    signal s_pause             : std_logic;
-    signal s_reinicio          : std_logic;
-	signal s_zera_trena        : std_logic; 
-    signal s_timeout           : std_logic;
+    component hex7seg is
+        port (
+            hexa : in  std_logic_vector(3 downto 0);
+            sseg : out std_logic_vector(6 downto 0)
+        );
+    end component;
+
+    signal s_angulo                   : std_logic_vector (23 downto 0);
+	signal s_contagem_endereco        : std_logic_vector (2 downto 0);
+    signal s_dado_recebido            : std_logic_vector (6 downto 0);
+    signal s_pronto                   : std_logic; 
+    signal s_pause                    : std_logic;
+    signal s_reinicio                 : std_logic;
+	signal s_zera_trena               : std_logic; 
+    signal s_timeout                  : std_logic;
+    signal s_db_estado_receptor       : std_logic_vector (3 downto 0);
+    signal s_db_posicao_servomotor    : std_logic_vector (2 downto 0);
+    signal s_ex_db_posicao_servomotor : std_logic_vector (3 downto 0);
 
 begin
 
@@ -153,21 +169,22 @@ begin
         paridade_ok    => open,
         pronto         => s_pronto,
         db_dado_serial => open,
-        db_estado      => open
+        db_estado      => s_db_estado_receptor
     );
     
     TRENA: trena_digital
     port map (
-        clock 	         => clock,
-        reset 		     => reset,
-        mensurar 	     => mensurar,
-        echo 		     => echo,
-        angulo           => s_angulo,
-        trigger 	     => trigger,
-        saida_serial     => saida_serial,
-        pronto 		     => fim_transmissao,
-        db_estado 	     => db_estado_trena,
-		db_estado_medida => db_estado_medida
+        clock 	              => clock,
+        reset 		          => reset,
+        mensurar 	          => mensurar,
+        echo 		          => echo,
+        angulo                => s_angulo,
+        trigger 	          => trigger,
+        saida_serial          => saida_serial,
+        pronto 		          => fim_transmissao,
+        db_estado 	          => db_estado_trena,
+		db_estado_medida      => db_estado_medida,
+        db_estado_transmissor => db_estado_transmissor
     );
 
     ROM_ANG: rom_angulos_8x24
@@ -184,7 +201,7 @@ begin
         pwm        => pwm,
         db_reset   => open,
         db_pwm     => open,
-        db_posicao => open
+        db_posicao => s_db_posicao_servomotor
     );
 
     CONTADOR_UPDOWN: contadorg_updown_m
@@ -212,7 +229,8 @@ begin
 		zera  => zera_2seg,
 		conta => conta_2seg,
 		Q     => open,
-		fim   => fim_2seg  
+		fim   => fim_2seg,
+		meio  => open
 	);
 	
 	CONT_TIMEOUT: contador_m
@@ -225,8 +243,23 @@ begin
 		zera  => zera_timeout,
 		conta => conta_timeout,
 		Q     => open,
-		fim   => s_timeout 
+		fim   => s_timeout,
+		meio  => open
 	);
+
+    HEX_RECEPTOR: hex7seg
+    port map (
+        hexa => s_db_estado_receptor,
+        sseg => db_estado_receptor
+    );
+
+    s_ex_db_posicao_servomotor <= '0' & s_db_posicao_servomotor;
+
+    HEX_SERVOMOTOR : hex7seg
+    port map (
+        hexa => s_ex_db_posicao_servomotor,
+        sseg => db_posicao_servomotor
+    );
 	
 	pause    <= s_pause; 
 	reinicio <= s_reinicio;
