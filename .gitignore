@@ -1,2 +1,12 @@
+*
+!*/
+!readme.md
+!.gitattributes
+!.gitignore
+!*.vhd
+!*.qar 
+!*.png
+!*.jpg
+!*.jpeg
 FeeFeeDer/Software/feefeeder/Lib
 FeeFeeDer/Software/feefeeder/share

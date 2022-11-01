@@ -3,131 +3,131 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : -5.349
-TNS   : -593.292
+Slack : -5.677
+TNS   : -649.180
 
 Type  : Slow 1100mV 85C Model Setup 'sonar_uc:UC|Eatual.inicial'
-Slack : -5.067
-TNS   : -72.453
+Slack : -4.831
+TNS   : -72.280
 
 Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : 0.279
+Slack : 0.352
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'sonar_uc:UC|Eatual.inicial'
-Slack : 2.819
+Slack : 3.000
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'clock'
-Slack : -2.537
-TNS   : -190.966
+Slack : -2.329
+TNS   : -176.566
 
 Type  : Slow 1100mV 85C Model Removal 'clock'
-Slack : 0.387
+Slack : 0.322
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
 Slack : -0.538
-TNS   : -212.552
+TNS   : -218.772
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'sonar_uc:UC|Eatual.inicial'
-Slack : 0.195
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : -5.540
-TNS   : -588.361
+Slack : -5.670
+TNS   : -636.597
 
 Type  : Slow 1100mV 0C Model Setup 'sonar_uc:UC|Eatual.inicial'
-Slack : -5.226
-TNS   : -73.740
+Slack : -4.908
+TNS   : -73.632
 
 Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : -0.022
-TNS   : -0.022
+Slack : 0.225
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'sonar_uc:UC|Eatual.inicial'
-Slack : 2.814
+Slack : 3.022
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'clock'
-Slack : -2.185
-TNS   : -161.996
+Slack : -1.991
+TNS   : -147.244
 
 Type  : Slow 1100mV 0C Model Removal 'clock'
-Slack : 0.123
+Slack : 0.029
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
 Slack : -0.538
-TNS   : -216.634
+TNS   : -224.118
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'sonar_uc:UC|Eatual.inicial'
-Slack : 0.193
+Slack : 0.334
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : -2.342
-TNS   : -168.806
+Slack : -2.414
+TNS   : -197.190
 
 Type  : Fast 1100mV 85C Model Setup 'sonar_uc:UC|Eatual.inicial'
-Slack : -1.987
-TNS   : -28.451
+Slack : -1.932
+TNS   : -28.720
 
 Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : 0.031
+Slack : 0.056
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'sonar_uc:UC|Eatual.inicial'
-Slack : 1.573
+Slack : 1.663
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'clock'
-Slack : -1.607
-TNS   : -79.841
+Slack : -1.459
+TNS   : -67.623
 
 Type  : Fast 1100mV 85C Model Removal 'clock'
-Slack : 0.280
+Slack : 0.214
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.099
-TNS   : -25.357
+Slack : -0.097
+TNS   : -25.371
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'sonar_uc:UC|Eatual.inicial'
-Slack : 0.317
+Slack : 0.401
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : -2.001
-TNS   : -132.167
+Slack : -2.103
+TNS   : -157.250
 
 Type  : Fast 1100mV 0C Model Setup 'sonar_uc:UC|Eatual.inicial'
-Slack : -1.875
-TNS   : -26.722
+Slack : -1.807
+TNS   : -26.989
 
 Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : -0.085
-TNS   : -0.085
+Slack : -0.080
+TNS   : -0.080
 
 Type  : Fast 1100mV 0C Model Hold 'sonar_uc:UC|Eatual.inicial'
-Slack : 1.524
+Slack : 1.619
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'clock'
-Slack : -1.164
-TNS   : -57.082
+Slack : -1.038
+TNS   : -46.497
 
 Type  : Fast 1100mV 0C Model Removal 'clock'
-Slack : 0.089
+Slack : 0.021
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.099
-TNS   : -25.833
+Slack : -0.096
+TNS   : -26.179
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'sonar_uc:UC|Eatual.inicial'
-Slack : 0.341
+Slack : 0.424
 TNS   : 0.000
 
 ------------------------------------------------------------

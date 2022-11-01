@@ -120,6 +120,86 @@
 					"strict" : false
 				},
 				{
+					"name" : "db_estado_transmissor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_transmissor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_transmissor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_transmissor[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_transmissor[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_transmissor[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado_receptor[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_posicao_servomotor[6]",
+					"strict" : false
+				},
+				{
 					"name" : "echo",
 					"strict" : false
 				},
