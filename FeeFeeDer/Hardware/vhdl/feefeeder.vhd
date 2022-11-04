@@ -6,6 +6,7 @@ entity feefeeder is
         clock                 : in  std_logic;
         reset                 : in  std_logic;
         echo                  : in  std_logic;
+        ligar                 : in  std_logic;
         trigger               : out std_logic;
         db_estado_trena       : out std_logic_vector(6 downto 0);
         db_estado_medida      : out std_logic_vector(6 downto 0);
