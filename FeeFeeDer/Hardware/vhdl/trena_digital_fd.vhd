@@ -82,15 +82,15 @@ architecture trena_digital_fd_behavioral of trena_digital_fd is
 	signal s_trigger            : std_logic;
 	signal s_contagem           : std_logic_vector(2 downto 0);
 
-	signal s_medida0               : std_logic_vector(3 downto 0);
-	signal s_medida1               : std_logic_vector(3 downto 0);
-	signal s_medida2               : std_logic_vector(3 downto 0);
-	signal s_medida_total          : std_logic_vector(11 downto 0);
-	signal s_ascii_medida0         : std_logic_vector(7 downto 0);
-	signal s_ascii_medida1         : std_logic_vector(7 downto 0);
-	signal s_ascii_medida2         : std_logic_vector(7 downto 0);
+	signal s_medida0       : std_logic_vector(3 downto 0);
+	signal s_medida1       : std_logic_vector(3 downto 0);
+	signal s_medida2       : std_logic_vector(3 downto 0);
+	signal s_medida_total  : std_logic_vector(11 downto 0);
+	signal s_ascii_medida0 : std_logic_vector(7 downto 0);
+	signal s_ascii_medida1 : std_logic_vector(7 downto 0);
+	signal s_ascii_medida2 : std_logic_vector(7 downto 0);
 
-	constant final   : std_logic_vector(7 downto 0) := "00100011";
+	constant final : std_logic_vector(7 downto 0) := "00100011";
 	
 begin
 

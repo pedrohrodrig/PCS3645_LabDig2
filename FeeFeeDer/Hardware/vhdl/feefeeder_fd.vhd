@@ -15,7 +15,6 @@ architecture behavioral of feefeeder_fd is
             reset 		          : in  std_logic;
             mensurar 		      : in  std_logic;
             echo 			      : in  std_logic;
-            angulo                : in  std_logic_vector(23 downto 0);
             trigger 		      : out std_logic;
             saida_serial  	      : out std_logic;
             pronto 			      : out std_logic;
