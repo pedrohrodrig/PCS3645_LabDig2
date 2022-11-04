@@ -16,6 +16,7 @@ entity feefeeder_uc is
         conta_temp_medida     : out std_logic;
         conta_temp_servomotor : out std_logic;
         enable_trena          : out std_logic;
+        posicao_servomotor    : out std_logic_vector(1 downto 0);
         db_estado             : out std_logic_vector(3 downto 0)
     );
 end entity;
@@ -95,6 +96,10 @@ begin
 
     with Eatual select
         enable_trena <= '1' when prepara_trena, '0' when others;
+
+    with Eatual select
+        posicao_servomotor <= "11" when muda_servomotor,
+                              "00" when others;
 
     with Eatual select
         db_estado <= "0000" when inicial, 

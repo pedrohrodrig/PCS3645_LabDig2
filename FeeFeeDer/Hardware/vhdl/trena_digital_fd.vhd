@@ -15,6 +15,7 @@ entity trena_digital_fd is
 		fim_medida  	      : out std_logic;
 		fim_transmissao       : out std_logic;
 		trigger     	      : out std_logic;
+		medida                : out std_logic_vector(11 downto 0);
 		db_estado_medida      : out std_logic_vector(3 downto 0);
 		db_estado_transmissor : out std_logic_vector(3 downto 0);
 		db_medir		      : out std_logic;
@@ -169,5 +170,6 @@ begin
 	trigger         <= s_trigger;
 	db_trigger      <= s_trigger;
 	db_echo         <= echo;
+	medida          <= s_medida_total;
 
 end trena_digital_fd_behavioral ;
