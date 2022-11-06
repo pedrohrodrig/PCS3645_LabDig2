@@ -11,6 +11,7 @@ from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.lang import Builder
+from kivy.properties import StringProperty
 
 # Variáveis Globais:
 
@@ -21,20 +22,18 @@ global dist_rev2
 dist_rev2 = 0
 
 # Variáveis usadas pela própria interface:
-global porcentage1
-porcentage1 = 0
-global porcentage2
-porcentage2 = 0
 
 # Login no MQTT
 
 
-class Main(Screen):
-    pass
-
-
 def porcentage(dist):
     return 100 - dist
+
+
+class Main(Screen):
+    contentA = str(porcentage(50))
+    contentB = str(porcentage(20))
+    pass
 
 
 kv = Builder.load_file("main.kv")
