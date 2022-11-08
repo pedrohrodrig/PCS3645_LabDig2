@@ -26,13 +26,46 @@ dist_rev2 = 0
 # Login no MQTT
 
 
+def image_load(porcentage):
+    if porcentage == 100:
+        return "imagens/Reservatório.png"
+    elif porcentage >= 90 and porcentage < 100:
+        return "imagens/Reservatório - 90.png"
+    elif porcentage >= 80 and porcentage < 90:
+        return "imagens/Reservatório - 80.png"
+    elif porcentage >= 75 and porcentage < 80:
+        return "imagens/Reservatório - 75.png"
+    elif porcentage >= 70 and porcentage < 75:
+        return "imagens/Reservatório - 70.png"
+    elif porcentage >= 60 and porcentage < 70:
+        return "imagens/Reservatório - 60.png"
+    elif porcentage >= 50 and porcentage < 60:
+        return "imagens/Reservatório - 50.png"
+    elif porcentage >= 40 and porcentage < 50:
+        return "imagens/Reservatório - 40.png"
+    elif porcentage >= 30 and porcentage < 40:
+        return "imagens/Reservatório - 30.png"
+    elif porcentage >= 20 and porcentage < 30:
+        return "imagens/Reservatório - 20.png"
+    elif porcentage >= 10 and porcentage < 20:
+        return "imagens/Reservatório - 10.png"
+    elif porcentage >= 0 and porcentage < 10:
+        return "imagens/Reservatório - 0.png"
+    else:
+        return "imagens/Reservatório - 70.png"
+
+
 def porcentage(dist):
     return 100 - dist
 
 
 class Main(Screen):
-    contentA = str(porcentage(50))
-    contentB = str(porcentage(20))
+    porcentageA = porcentage(25)
+    porcentageB = porcentage(50)
+    contentA = str(porcentageA)
+    contentB = str(porcentageB)
+    imageA = image_load(porcentageA)
+    imageB = image_load(porcentageB)
     pass
 
 
