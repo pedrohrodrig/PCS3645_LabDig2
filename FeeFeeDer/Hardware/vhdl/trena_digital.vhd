@@ -54,7 +54,7 @@ architecture trena_digital_behavioral of trena_digital is
 			db_estado_transmissor : out std_logic_vector(3 downto 0);
 			db_medir		      : out std_logic;
 			db_echo               : out std_logic;
-			db_trigger            : out std_logic;
+			db_trigger            : out std_logic
 		);
 	end component;
 	

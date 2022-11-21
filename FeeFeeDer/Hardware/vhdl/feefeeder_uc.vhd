@@ -8,14 +8,18 @@ entity feefeeder_uc is
         ligar                 : in  std_logic;
         fim_temp_medida       : in  std_logic;
         fim_temp_servomotor   : in  std_logic;
+        fim_temp_aberto       : in  std_logic;
         pronto_trena          : in  std_logic;
         pouca_comida          : in  std_logic;
         comida_suficiente     : in  std_logic;
         zera_temp_medida      : out std_logic;
         zera_temp_servomotor  : out std_logic;
+        zera_temp_aberto      : out std_logic;
         conta_temp_medida     : out std_logic;
         conta_temp_servomotor : out std_logic;
+        conta_temp_aberto     : out std_logic;
         enable_trena          : out std_logic;
+        enable_reg_servomotor : out std_logic;
         posicao_servomotor    : out std_logic_vector(1 downto 0);
         db_estado             : out std_logic_vector(3 downto 0)
     );
@@ -30,7 +34,9 @@ architecture feefeeder_uc_behavioral of feefeeder_uc is
         prepara_trena, 
         medir_e_transmitir, 
         muda_servomotor, 
-        espera_servomotor, 
+        espera_medida_aberto,
+        prepara_trena_aberto,
+        medir_e_transmitir_aberto,
         retorno_servomotor
     );
 
@@ -69,11 +75,20 @@ begin
                                    else                                            Eprox <= medir_e_transmitir;
 							       end if;
 
-		when muda_servomotor => Eprox <= espera_servomotor;
+		when muda_servomotor => Eprox <= espera_medida_aberto;
 
-        when espera_servomotor => if fim_temp_servomotor='1' or comida_suficiente='1' then Eprox <= retorno_servomotor;
-                                  else                                                     Eprox <= espera_servomotor;
-                                  end if;
+        when espera_medida_aberto => if fim_temp_servomotor='1' then Eprox <= retorno_servomotor;
+                                     elsif fim_temp_aberto='1'  then Eprox <= prepara_trena_aberto;
+                                     else                            Eprox <= espera_medida_aberto;
+                                     end if;
+
+        when prepara_trena_aberto => Eprox <= if fim_temp_servomotor='1' then Eprox <= retorno_servomotor;
+                                              else                            Eprox <= medir_e_transmitir_aberto;
+
+        when medir_e_transmitir_aberto => if fim_temp_servomotor='1' or (pronto_trena='1' and comida_suficiente='1') then Eprox <= retorno_servomotor;
+                                          elsif pronto_trena='1'                                                     then Eprox <= espera_medida_aberto;
+                                          else                                                                            Eprox <= medir_e_transmitir_aberto;
+                                          end if;
 
         when retorno_servomotor => Eprox <= preparacao;
 
@@ -87,15 +102,24 @@ begin
 
     with Eatual select 
         zera_temp_servomotor <= '1' when preparacao, '0' when others;
+
+    with Eatual select 
+        zera_temp_aberto <= '1' when preparacao, '0' when others;
 		
     with Eatual select
         conta_temp_medida <= '1' when espera_medida, '0' when others;
 
     with Eatual select
-        conta_temp_servomotor <= '1' when espera_servomotor, '0' when others;
+        conta_temp_servomotor <= '1' when espera_medida_aberto | prepara_trena_aberto | medir_e_transmitir_aberto, '0' when others;
+
+    with Eatual select 
+        conta_temp_aberto <= '1' when espera_medida_aberto, '0' when others;
 
     with Eatual select
-        enable_trena <= '1' when prepara_trena, '0' when others;
+        enable_trena <= '1' when prepara_trena | prepara_trena_aberto, '0' when others;
+
+    with Eatual select
+        enable_reg_servomotor <= '1' when muda_servomotor | retorno_servomotor, '0' when others;
 
     with Eatual select
         posicao_servomotor <= "11" when muda_servomotor,

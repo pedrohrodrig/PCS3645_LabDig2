@@ -20,7 +20,7 @@ entity trena_digital_fd is
 		db_estado_transmissor : out std_logic_vector(3 downto 0);
 		db_medir		      : out std_logic;
 		db_echo               : out std_logic;
-		db_trigger            : out std_logic;
+		db_trigger            : out std_logic
     );
 end entity trena_digital_fd;
 
@@ -81,7 +81,7 @@ architecture trena_digital_fd_behavioral of trena_digital_fd is
 	signal s_pronto_medida      : std_logic;	
 	signal s_pronto_transmissao : std_logic;
 	signal s_trigger            : std_logic;
-	signal s_contagem           : std_logic_vector(2 downto 0);
+	signal s_contagem           : std_logic_vector(1 downto 0);
 
 	signal s_medida0       : std_logic_vector(3 downto 0);
 	signal s_medida1       : std_logic_vector(3 downto 0);
@@ -90,6 +90,7 @@ architecture trena_digital_fd_behavioral of trena_digital_fd is
 	signal s_ascii_medida0 : std_logic_vector(7 downto 0);
 	signal s_ascii_medida1 : std_logic_vector(7 downto 0);
 	signal s_ascii_medida2 : std_logic_vector(7 downto 0);
+	signal s_dado          : std_logic_vector(7 downto 0);
 
 	constant final : std_logic_vector(7 downto 0) := "00100011";
 	
@@ -124,7 +125,7 @@ begin
 		clock 			=> clock,
 		reset 			=> reset,
 		partida  		=> transmitir,
-		dados_ascii 	=> s_dado,
+		dados_ascii 	=> s_dado(6 downto 0),
 		saida_serial 	=> saida_serial,
 		pronto 			=> s_pronto_transmissao,
 		db_partida      => open,
@@ -134,8 +135,8 @@ begin
 	
 	contagem: contador_m
 	generic map(
-		M => 3,
-		N => 2
+		M => 4,
+		N => 3
 	)
 	port map(
 		clock  => clock,
@@ -164,8 +165,7 @@ begin
 		saida => s_ascii_medida2
 	);
 	
-	contador 		<= s_contagem;
-	fim_medida 		<= s_pronto_medida;
+	fim_medida 		 <= s_pronto_medida;
 	fim_transmissao <= s_pronto_transmissao;
 	trigger         <= s_trigger;
 	db_trigger      <= s_trigger;

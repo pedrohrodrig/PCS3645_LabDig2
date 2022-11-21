@@ -6,11 +6,11 @@ entity controle_servo is
   port (
       clock       : in  std_logic;
       reset       : in  std_logic;
-      posicao     : in  std_logic_vector(2 downto 0);  
+      posicao     : in  std_logic_vector(1 downto 0);  
       pwm         : out std_logic;
 		  db_reset    : out std_logic;
       db_pwm      : out std_logic;
-      db_posicao  : out std_logic_vector(2 downto 0)
+      db_posicao  : out std_logic_vector(1 downto 0)
   );
 end controle_servo;
 
@@ -53,14 +53,10 @@ begin
   process(posicao)
   begin
     case posicao is
-      when "000" =>  s_largura <= 35000;  -- pulso de 0,700 ms / ângulo de 20°
-      when "001" =>  s_largura <= 45700;  -- pulso de 0,914 ms / ângulo de 40°
-      when "010" =>  s_largura <= 56450;  -- pulso de 1,129 ms / ângulo de 60°
-      when "011" =>  s_largura <= 67150;  -- pulso de 1,343 ms / ângulo de 80°
-		  when "100" =>  s_largura <= 77850;  -- pulso de 1,557 ms / ângulo de 100°
-		  when "101" =>  s_largura <= 88550;  -- pulso de 1,771 ms / ângulo de 120°
-		  when "110" =>  s_largura <= 99300;  -- pulso de 1,986 ms / ângulo de 140°
-		  when "111" =>  s_largura <= 110000; -- pulso de 2,200 ms / ângulo de 160°
+      when "00" =>  s_largura <= 35000;  -- pulso de 0,700 ms 
+      when "01" =>  s_largura <= 45700;  -- pulso de 0,914 ms 
+		  when "10" =>  s_largura <= 99300;  -- pulso de 1,986 ms 
+		  when "11" =>  s_largura <= 110000; -- pulso de 2,200 ms 
       when others => s_largura <= 0;      -- nulo saida 0
     end case;
   end process;
