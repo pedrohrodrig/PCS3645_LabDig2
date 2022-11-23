@@ -60,13 +60,20 @@ def porcentage(dist):
 
 
 class Main(Screen):
+    i = 0
     porcentageA = porcentage(25)
     porcentageB = porcentage(50)
-    contentA = str(porcentageA)
-    contentB = str(porcentageB)
+    contentA = StringProperty()
+    contentB = StringProperty()
     imageA = image_load(porcentageA)
     imageB = image_load(porcentageB)
-    pass
+
+    def action(self):
+        self.contentA = str(self.i)
+        self.contentB = str(100 - self.i)
+        self.ids.imageA.source = image_load(self.i)
+        self.ids.imageB.source = image_load(100 - self.i)
+        self.i += 1
 
 
 kv = Builder.load_file("main.kv")
