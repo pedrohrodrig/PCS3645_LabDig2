@@ -14,6 +14,8 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty
 
 import paho.mqtt.client as mqtt
+from kivy.clock import Clock
+import time
 
 # Variáveis Globais:
 
@@ -24,10 +26,14 @@ global dist_rev2
 dist_rev2 = 0
 
 # Variáveis usadas pela própria interface:
+global porcentagemA
+porcentagemA = 1
+global porcentagemB
+porcentagemB = 1
 
 # Login no MQTT
-user = "grupo1-bancadaA7" # TODO: Ajustar os parametros de login
-passwd = "L@Bdygy1A7"
+user = "grupo1-bancadaA5" # TODO: Ajustar os parametros de login
+passwd = "digi#@1A5"
 Broker = "labdigi.wiseful.com.br"
 Port = 80
 KeepAlive = 60
@@ -54,16 +60,28 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe(user+"/S6", qos=0)
     client.subscribe(user+"/S7", qos=0)
     client.subscribe(user+"/TX", qos=0)
+    client.subscribe(user+"/led", qos=0)
+    #client.subscribe(user+"/TX", qos=0)
 
 # MQTT (Callback de mensagem)
-def on_message(client, userdata, msg): # (msg.topic+" "+str(msg.payload)) # Printa no terminal o topico alterado
-    print(msg.topic+" "+str(msg.payload))
-    #global variavel # Usar caso precise alterar valores de variavel global
+def on_message(client, userdata, msg):
+    print(msg.topic+" "+str(msg.payload)) # Printa no terminal o topico alterado
+
+    # Variaveis Globais
+    global porcentagemA
+    global porcentagemB
     
-    # if str(msg.topic+" "+str(msg.payload)) == user+"/S0 b'1'" : # Caso receba o binario 1
-    #    pass
-    # elif str(msg.topic+" "+str(msg.payload)) == user+"/S1 b'0'" : # Caso receba o binario 0
-    #    pass
+    if str(msg.topic+" "+str(msg.payload)) == user+"/S0 b'1'" : # Caso receba o binario 1
+        porcentagemA = 50
+        porcentagemB = 50
+    
+    elif str(msg.topic+" "+str(msg.payload)) == user+"/S1 b'0'" : # Caso receba o binario 0
+        porcentagemA = 1
+        porcentagemB = 99
+    
+    elif str(msg.topic+" "+str(msg.payload)) == user+"/S3 b'0'" : # Caso receba o binario 0
+        porcentagemA = 78
+        porcentagemB = 63
 
 # MQTT Cria cliente
 client = mqtt.Client()
@@ -114,21 +132,31 @@ class Main(Screen):
     imageB = image_load(porcentageB)
 
     def action(self):
-        self.contentA = str(self.i)
-        self.contentB = str(100 - self.i)
-        self.ids.imageA.source = image_load(self.i)
-        self.ids.imageB.source = image_load(100 - self.i)
-        self.i += 1
+        global porcentagemA
+        global porcentagemB
+        
+        return str(porcentagemA), str(porcentagemB), image_load(porcentagemA), image_load(porcentagemB)
 
+    def update(self, dt):
+        self.contentA, self.contentB, self.ids.imageA.source, self.ids.imageB.source = self.action()
 
-kv = Builder.load_file("main.kv")
+#kv = Builder.load_file("main.kv")
 
 
 class MainApp(App):
 
     def build(self):
-        return kv
+        Builder.load_file("main.kv")
+        myMain = Main()
+        Clock.schedule_interval(myMain.update, 1)
+        return myMain
 
 
 if __name__ == '__main__':
+    client.connect(Broker, Port, KeepAlive)
+    client.loop_start()
+
     MainApp().run()
+
+    client.loop_stop()
+    client.disconnect()
