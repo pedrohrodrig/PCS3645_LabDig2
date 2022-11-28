@@ -16,7 +16,8 @@ entity feefeeder_fd is
         enable_trena              : in  std_logic;
 		enable_reg_servomotor     : in  std_logic;
         posicao_servomotor        : in  std_logic_vector(1 downto 0);
-        trigger                   : out std_logic;
+        trigger_comedouro         : out std_logic;
+        trigger_reservatorio      : out std_logic;
         saida_serial_comedouro    : out std_logic;
         saida_serial_reservatorio : out std_logic;
         fim_temp_medida           : out std_logic;
@@ -111,7 +112,7 @@ begin
         reset 		          => reset,
         mensurar 		      => enable_trena,
         echo 			      => echo_comedouro,
-        trigger 		      => trigger,
+        trigger 		      => trigger_comedouro,
         saida_serial  	      => saida_serial_comedouro,
         pronto 			      => pronto_trena_comedouro,
         medida                => s_medida_comedouro,
@@ -126,7 +127,7 @@ begin
         reset 		          => reset,
         mensurar 		      => enable_trena,
         echo 			      => echo_reservatorio,
-        trigger 		      => trigger,
+        trigger 		      => trigger_reservatorio,
         saida_serial  	      => saida_serial_reservatorio,
         pronto 			      => open,
         medida                => s_medida_reservatorio,

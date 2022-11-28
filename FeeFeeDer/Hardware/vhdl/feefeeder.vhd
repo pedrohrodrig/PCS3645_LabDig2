@@ -8,7 +8,8 @@ entity feefeeder is
         echo_comedouro            : in  std_logic;
         echo_reservatorio         : in  std_logic;
         ligar                     : in  std_logic;
-        trigger                   : out std_logic;
+        trigger_comedouro         : out std_logic;
+        trigger_reservatorio      : out std_logic;
 		saida_serial_comedouro    : out std_logic;
         saida_serial_reservatorio : out std_logic;
 		pwm                       : out std_logic;
@@ -38,7 +39,8 @@ architecture feefeeder_behavioral of feefeeder is
             enable_trena              : in  std_logic;
             enable_reg_servomotor     : in  std_logic;
             posicao_servomotor        : in  std_logic_vector(1 downto 0);
-            trigger                   : out std_logic;
+            trigger_comedouro         : out std_logic;
+            trigger_reservatorio      : out std_logic;
             saida_serial_comedouro    : out std_logic;
             saida_serial_reservatorio : out std_logic;
             fim_temp_medida           : out std_logic;
@@ -122,7 +124,8 @@ begin
         conta_temp_aberto         => s_conta_temp_aberto,
         enable_trena              => s_enable_trena,
         posicao_servomotor        => s_posicao_servomotor,
-        trigger                   => trigger,
+        trigger_comedouro         => trigger_comedouro,
+        trigger_reservatorio      => trigger_reservatorio,
         saida_serial_comedouro    => s_saida_serial_comedouro,
         saida_serial_reservatorio => s_saida_serial_reservatorio,
         fim_temp_medida           => s_fim_temp_medida,
