@@ -3,31 +3,33 @@ use ieee.std_logic_1164.all;
 
 entity feefeeder_fd is
     port (
-        clock                 : in  std_logic;
-        reset                 : in  std_logic;
-        echo                  : in  std_logic;
-        zera_temp_medida      : in  std_logic;
-        zera_temp_servomotor  : in  std_logic;
-        zera_temp_aberto      : in  std_logic;
-        conta_temp_medida     : in  std_logic;
-        conta_temp_servomotor : in  std_logic;
-        conta_temp_aberto     : in  std_logic;
-        enable_trena          : in  std_logic;
-		  enable_reg_servomotor : in  std_logic;
-        posicao_servomotor    : in  std_logic_vector(1 downto 0);
-        trigger               : out std_logic;
-        saida_serial          : out std_logic;
-        fim_temp_medida       : out std_logic;
-        fim_temp_servomotor   : out std_logic;
-        fim_temp_aberto       : out std_logic;
-        pronto_trena          : out std_logic;
-        pouca_comida          : out std_logic;
-        comida_suficiente     : out std_logic;
-        pwm                   : out std_logic;
-        db_estado_trena       : out std_logic_vector(6 downto 0);
-        db_estado_medida      : out std_logic_vector(6 downto 0);
-        db_estado_transmissor : out std_logic_vector(6 downto 0);
-        db_posicao_servomotor : out std_logic_vector(1 downto 0)
+        clock                     : in  std_logic;
+        reset                     : in  std_logic;
+        echo_comedouro            : in  std_logic;
+        echo_reservatorio         : in  std_logic;
+        zera_temp_medida          : in  std_logic;
+        zera_temp_servomotor      : in  std_logic;
+        zera_temp_aberto          : in  std_logic;
+        conta_temp_medida         : in  std_logic;
+        conta_temp_servomotor     : in  std_logic;
+        conta_temp_aberto         : in  std_logic;
+        enable_trena              : in  std_logic;
+		enable_reg_servomotor     : in  std_logic;
+        posicao_servomotor        : in  std_logic_vector(1 downto 0);
+        trigger                   : out std_logic;
+        saida_serial_comedouro    : out std_logic;
+        saida_serial_reservatorio : out std_logic;
+        fim_temp_medida           : out std_logic;
+        fim_temp_servomotor       : out std_logic;
+        fim_temp_aberto           : out std_logic;
+        pronto_trena_comedouro    : out std_logic;
+        pouca_comida              : out std_logic;
+        comida_suficiente         : out std_logic;
+        pwm                       : out std_logic;
+        db_estado_trena           : out std_logic_vector(6 downto 0);
+        db_estado_medida          : out std_logic_vector(6 downto 0);
+        db_estado_transmissor     : out std_logic_vector(6 downto 0);
+        db_posicao_servomotor     : out std_logic_vector(1 downto 0)
     );
 end entity;
 
@@ -97,24 +99,40 @@ architecture behavioral of feefeeder_fd is
         );
     end component;
 
-    signal s_medida             : std_logic_vector(11 downto 0);
-    signal s_posicao_servomotor : std_logic_vector(1 downto 0);
+    signal s_medida_comedouro    : std_logic_vector(11 downto 0);
+    signal s_medida_reservatorio : std_logic_vector(11 downto 0);
+    signal s_posicao_servomotor  : std_logic_vector(1 downto 0);
 
 begin
     
-    TRENA: trena_digital
+    TRENA_COMEDOURO: trena_digital
     port map (
         clock 			      => clock,
         reset 		          => reset,
         mensurar 		      => enable_trena,
-        echo 			      => echo,
+        echo 			      => echo_comedouro,
         trigger 		      => trigger,
-        saida_serial  	      => saida_serial,
-        pronto 			      => pronto_trena,
-        medida                => s_medida,
+        saida_serial  	      => saida_serial_comedouro,
+        pronto 			      => pronto_trena_comedouro,
+        medida                => s_medida_comedouro,
         db_estado 		      => db_estado_trena,
         db_estado_medida      => db_estado_medida,
         db_estado_transmissor => db_estado_transmissor
+    );
+
+    TRENA_RESERVATORIO: trena_digital
+    port map (
+        clock 			      => clock,
+        reset 		          => reset,
+        mensurar 		      => enable_trena,
+        echo 			      => echo_reservatorio,
+        trigger 		      => trigger,
+        saida_serial  	      => saida_serial_reservatorio,
+        pronto 			      => open,
+        medida                => s_medida_reservatorio,
+        db_estado 		      => open,
+        db_estado_medida      => open,
+        db_estado_transmissor => open
     );
 
     TEMP_MEDIDA_NORMAL: contador_m
@@ -182,7 +200,7 @@ begin
 
     vN : verifica_nivel
     port map (
-        medida            => s_medida,
+        medida            => s_medida_comedouro,
         pouca_comida      => pouca_comida,
         comida_suficiente => comida_suficiente
     );

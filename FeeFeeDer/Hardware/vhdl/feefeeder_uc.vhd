@@ -3,25 +3,25 @@ use ieee.std_logic_1164.all;
 
 entity feefeeder_uc is
     port (
-        clock                 : in  std_logic;
-        reset                 : in  std_logic;
-        ligar                 : in  std_logic;
-        fim_temp_medida       : in  std_logic;
-        fim_temp_servomotor   : in  std_logic;
-        fim_temp_aberto       : in  std_logic;
-        pronto_trena          : in  std_logic;
-        pouca_comida          : in  std_logic;
-        comida_suficiente     : in  std_logic;
-        zera_temp_medida      : out std_logic;
-        zera_temp_servomotor  : out std_logic;
-        zera_temp_aberto      : out std_logic;
-        conta_temp_medida     : out std_logic;
-        conta_temp_servomotor : out std_logic;
-        conta_temp_aberto     : out std_logic;
-        enable_trena          : out std_logic;
-        enable_reg_servomotor : out std_logic;
-        posicao_servomotor    : out std_logic_vector(1 downto 0);
-        db_estado             : out std_logic_vector(3 downto 0)
+        clock                  : in  std_logic;
+        reset                  : in  std_logic;
+        ligar                  : in  std_logic;
+        fim_temp_medida        : in  std_logic;
+        fim_temp_servomotor    : in  std_logic;
+        fim_temp_aberto        : in  std_logic;
+        pronto_trena_comedouro : in  std_logic;
+        pouca_comida           : in  std_logic;
+        comida_suficiente      : in  std_logic;
+        zera_temp_medida       : out std_logic;
+        zera_temp_servomotor   : out std_logic;
+        zera_temp_aberto       : out std_logic;
+        conta_temp_medida      : out std_logic;
+        conta_temp_servomotor  : out std_logic;
+        conta_temp_aberto      : out std_logic;
+        enable_trena           : out std_logic;
+        enable_reg_servomotor  : out std_logic;
+        posicao_servomotor     : out std_logic_vector(1 downto 0);
+        db_estado              : out std_logic_vector(3 downto 0)
     );
 end entity;
 
@@ -55,7 +55,7 @@ begin
     end process;
 
     -- logica de proximo estado
-    process (Eatual, ligar, fim_temp_medida, pronto_trena, pouca_comida, fim_temp_servomotor, comida_suficiente, fim_temp_aberto) 
+    process (Eatual, ligar, fim_temp_medida, pronto_trena_comedouro, pouca_comida, fim_temp_servomotor, comida_suficiente, fim_temp_aberto) 
     begin
       case Eatual is
         when inicial => if ligar='1' then Eprox <= preparacao;
@@ -70,9 +70,9 @@ begin
 
         when prepara_trena => Eprox <= medir_e_transmitir;
 
-		when medir_e_transmitir => if pronto_trena='1' and pouca_comida = '1' then Eprox <= muda_servomotor;
-                                   elsif pronto_trena='1'                     then Eprox <= preparacao;
-                                   else                                            Eprox <= medir_e_transmitir;
+		when medir_e_transmitir => if pronto_trena_comedouro='1' and pouca_comida = '1' then Eprox <= muda_servomotor;
+                                   elsif pronto_trena_comedouro='1'                     then Eprox <= preparacao;
+                                   else                                                      Eprox <= medir_e_transmitir;
 							       end if;
 
 		when muda_servomotor => Eprox <= espera_medida_aberto;
@@ -86,9 +86,9 @@ begin
                                      else                            Eprox <= medir_e_transmitir_aberto;
 											    end if;
 
-        when medir_e_transmitir_aberto => if fim_temp_servomotor='1' or (pronto_trena='1' and comida_suficiente='1') then Eprox <= retorno_servomotor;
-                                          elsif pronto_trena='1'                                                     then Eprox <= espera_medida_aberto;
-                                          else                                                                            Eprox <= medir_e_transmitir_aberto;
+        when medir_e_transmitir_aberto => if fim_temp_servomotor='1' or (pronto_trena_comedouro='1' and comida_suficiente='1') then Eprox <= retorno_servomotor;
+                                          elsif pronto_trena_comedouro='1'                                                     then Eprox <= espera_medida_aberto;
+                                          else                                                                                      Eprox <= medir_e_transmitir_aberto;
                                           end if;
 
         when retorno_servomotor => Eprox <= preparacao;
@@ -135,8 +135,8 @@ begin
                      "0101" when muda_servomotor,
                      "0110" when espera_medida_aberto,
                      "0111" when prepara_trena_aberto,
-					      "1000" when medir_e_transmitir_aberto,
-					      "1001" when retorno_servomotor,		
+					 "1000" when medir_e_transmitir_aberto,
+					 "1001" when retorno_servomotor,		
                      "1110" when others;
     
 end architecture feefeeder_uc_behavioral;
