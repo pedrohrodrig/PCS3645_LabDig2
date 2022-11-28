@@ -13,6 +13,7 @@ entity feefeeder_fd is
         conta_temp_servomotor : in  std_logic;
         conta_temp_aberto     : in  std_logic;
         enable_trena          : in  std_logic;
+		  enable_reg_servomotor : in  std_logic;
         posicao_servomotor    : in  std_logic_vector(1 downto 0);
         trigger               : out std_logic;
         saida_serial          : out std_logic;
@@ -94,7 +95,7 @@ architecture behavioral of feefeeder_fd is
            D      : in  std_logic_vector (N-1 downto 0);
            Q      : out std_logic_vector (N-1 downto 0) 
         );
-    end component
+    end component;
 
     signal s_medida             : std_logic_vector(11 downto 0);
     signal s_posicao_servomotor : std_logic_vector(1 downto 0);
@@ -118,8 +119,8 @@ begin
 
     TEMP_MEDIDA_NORMAL: contador_m
     generic map (
-        M => 2, -- TODO: definir tempo entre medicoes
-        N => 1
+        M => 250000000, -- TODO: definir tempo entre medicoes
+        N => 28
     )
     port map (
         clock => clock,
@@ -132,8 +133,8 @@ begin
 
     TEMP_MEDIDA_ABERTO: contador_m
     generic map (
-        M => 2, -- TODO: definir tempo entre medicoes quando está aberto
-        N => 1
+        M => 25000000, -- TODO: definir tempo entre medicoes quando está aberto
+        N => 25
     )
     port map (
         clock => clock,
@@ -146,8 +147,8 @@ begin
 
     TEMP_SERVOMOTOR: contador_m
     generic map (
-        M => 2, -- TODO: definir tempo maximo que servomotor ficará aberto
-        N => 1
+        M => 250000000, -- TODO: definir tempo maximo que servomotor ficará aberto
+        N => 28 
     )
     port map (
         clock => clock,

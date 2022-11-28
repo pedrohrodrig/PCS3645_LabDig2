@@ -135,8 +135,8 @@ begin
 	
 	contagem: contador_m
 	generic map(
-		M => 4,
-		N => 3
+		M => 3,
+		N => 2
 	)
 	port map(
 		clock  => clock,

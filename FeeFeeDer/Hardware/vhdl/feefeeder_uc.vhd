@@ -55,7 +55,7 @@ begin
     end process;
 
     -- logica de proximo estado
-    process (Eatual, ligar, fim_temp_medida, pronto_trena, pouca_comida, fim_temp_servomotor, comida_suficiente) 
+    process (Eatual, ligar, fim_temp_medida, pronto_trena, pouca_comida, fim_temp_servomotor, comida_suficiente, fim_temp_aberto) 
     begin
       case Eatual is
         when inicial => if ligar='1' then Eprox <= preparacao;
@@ -82,8 +82,9 @@ begin
                                      else                            Eprox <= espera_medida_aberto;
                                      end if;
 
-        when prepara_trena_aberto => Eprox <= if fim_temp_servomotor='1' then Eprox <= retorno_servomotor;
-                                              else                            Eprox <= medir_e_transmitir_aberto;
+        when prepara_trena_aberto => if fim_temp_servomotor='1' then Eprox <= retorno_servomotor;
+                                     else                            Eprox <= medir_e_transmitir_aberto;
+											    end if;
 
         when medir_e_transmitir_aberto => if fim_temp_servomotor='1' or (pronto_trena='1' and comida_suficiente='1') then Eprox <= retorno_servomotor;
                                           elsif pronto_trena='1'                                                     then Eprox <= espera_medida_aberto;
@@ -132,8 +133,10 @@ begin
                      "0011" when prepara_trena,
                      "0100" when medir_e_transmitir, 
                      "0101" when muda_servomotor,
-                     "0110" when espera_servomotor,
-                     "0111" when retorno_servomotor,  
+                     "0110" when espera_medida_aberto,
+                     "0111" when prepara_trena_aberto,
+					      "1000" when medir_e_transmitir_aberto,
+					      "1001" when retorno_servomotor,		
                      "1110" when others;
     
 end architecture feefeeder_uc_behavioral;
