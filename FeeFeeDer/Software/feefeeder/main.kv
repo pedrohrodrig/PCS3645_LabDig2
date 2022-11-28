@@ -9,9 +9,19 @@ Main:
     GridLayout: 
         cols:2
         Label:
-            id: title1
-            text: "Reservatório 1: "
+            text:"Reservatório A: \n" + root.contentA
+            id: titleA
+        Image:
+            id: imageA 
+            source: root.imageA
         Label:
-            id: title2
-            text: "Reservatório 2: "
+            text:"Reservatório B: \n" + root.contentB
+            id: titleB
+        Image: 
+            id: imageB
+            source: root.imageB
+        Button:
+            text: "Atualizar"
+            id: btnA
+            on_press: root.action()
 
