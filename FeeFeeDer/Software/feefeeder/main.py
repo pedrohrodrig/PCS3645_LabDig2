@@ -10,6 +10,7 @@ import kivy
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.screenmanager import Screen, ScreenManager
+from kivy.uix.popup import Popup
 from kivy.lang import Builder
 from kivy.properties import StringProperty
 
@@ -29,16 +30,18 @@ dist_rev2 = 0
 global porcentagemA
 porcentagemA = 1
 global porcentagemB
-porcentagemB = 1
+porcentagemB = 100
 
 # Login no MQTT
-user = "grupo1-bancadaA5" # TODO: Ajustar os parametros de login
-passwd = "digi#@1A5"
+user = "grupo2-bancadaA5"  # TODO: Ajustar os parametros de login
+passwd = "digi#@2A5"
 Broker = "labdigi.wiseful.com.br"
 Port = 80
 KeepAlive = 60
 
 # MQTT (Callback de conexao)
+
+
 def on_connect(client, userdata, flags, rc):
     print("Conectado com codigo " + str(rc))
     # TODO: Subscrever somente para os canais que seräo usados
@@ -64,30 +67,35 @@ def on_connect(client, userdata, flags, rc):
     #client.subscribe(user+"/TX", qos=0)
 
 # MQTT (Callback de mensagem)
+
+
 def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload)) # Printa no terminal o topico alterado
+    # Printa no terminal o topico alterado
+    print(msg.topic+" "+str(msg.payload))
 
     # Variaveis Globais
     global porcentagemA
     global porcentagemB
-    
-    if str(msg.topic+" "+str(msg.payload)) == user+"/S0 b'1'" : # Caso receba o binario 1
+
+    if str(msg.topic+" "+str(msg.payload)) == user+"/S0 b'1'":  # Caso receba o binario 1
         porcentagemA = 50
         porcentagemB = 50
-    
-    elif str(msg.topic+" "+str(msg.payload)) == user+"/S1 b'0'" : # Caso receba o binario 0
+
+    elif str(msg.topic+" "+str(msg.payload)) == user+"/S1 b'0'":  # Caso receba o binario 0
         porcentagemA = 1
         porcentagemB = 99
-    
-    elif str(msg.topic+" "+str(msg.payload)) == user+"/S3 b'0'" : # Caso receba o binario 0
+
+    elif str(msg.topic+" "+str(msg.payload)) == user+"/S3 b'0'":  # Caso receba o binario 0
         porcentagemA = 78
-        porcentagemB = 63
+        porcentagemB = 20
+
 
 # MQTT Cria cliente
 client = mqtt.Client()
-client.on_connect = on_connect      
-client.on_message = on_message  
+client.on_connect = on_connect
+client.on_message = on_message
 client.username_pw_set(user, passwd)
+
 
 def image_load(porcentage):
     if porcentage == 100:
@@ -123,25 +131,35 @@ def porcentage(dist):
 
 
 class Main(Screen):
-    i = 0
     porcentageA = porcentage(25)
     porcentageB = porcentage(50)
     contentA = StringProperty()
     contentB = StringProperty()
     imageA = image_load(porcentageA)
     imageB = image_load(porcentageB)
+    conditional = False
 
     def action(self):
         global porcentagemA
         global porcentagemB
-        
+        global popup
+        popup = Popup(title="Atenção!",
+                      content=Label(
+                          text="Recarregue o reservatório secundário manualmente!"),
+                      size_hint=(None, None), size=(400, 400))
+
         return str(porcentagemA), str(porcentagemB), image_load(porcentagemA), image_load(porcentagemB)
 
     def update(self, dt):
         self.contentA, self.contentB, self.ids.imageA.source, self.ids.imageB.source = self.action()
+        if porcentagemB <= 25 and self.conditional:
+            popup.open()
+            self.conditional = False
+        elif porcentagemB > 25:
+            self.conditional = True
+
 
 #kv = Builder.load_file("main.kv")
-
 
 class MainApp(App):
 
