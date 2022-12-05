@@ -15,11 +15,13 @@ entity trena_digital_fd is
 		fim_medida  	      : out std_logic;
 		fim_transmissao       : out std_logic;
 		trigger     	      : out std_logic;
+		medida_dois           : in  std_logic_vector(11 downto 0);
 		medida                : out std_logic_vector(11 downto 0);
 		db_estado_medida      : out std_logic_vector(3 downto 0);
 		db_estado_transmissor : out std_logic_vector(3 downto 0);
 		db_medir		      : out std_logic;
 		db_echo               : out std_logic;
+		db_cont    : out std_logic_vector(10 downto 0);
 		db_trigger            : out std_logic
     );
 end entity trena_digital_fd;
@@ -37,6 +39,7 @@ architecture trena_digital_fd_behavioral of trena_digital_fd is
 			pronto 	  : out std_logic;
 			db_reset  : out std_logic;
 			db_medir  : out std_logic;
+			db_cont    : out std_logic_vector(10 downto 0);
 			db_estado : out std_logic_vector (3 downto 0) -- estado da UC
 		);
 	end component;
@@ -81,18 +84,24 @@ architecture trena_digital_fd_behavioral of trena_digital_fd is
 	signal s_pronto_medida      : std_logic;	
 	signal s_pronto_transmissao : std_logic;
 	signal s_trigger            : std_logic;
-	signal s_contagem           : std_logic_vector(1 downto 0);
+	signal s_contagem           : std_logic_vector(2 downto 0);
 
 	signal s_medida0       : std_logic_vector(3 downto 0);
 	signal s_medida1       : std_logic_vector(3 downto 0);
 	signal s_medida2       : std_logic_vector(3 downto 0);
 	signal s_medida_total  : std_logic_vector(11 downto 0);
+	signal s_medida20       : std_logic_vector(3 downto 0);
+	signal s_medida21       : std_logic_vector(3 downto 0);
+	signal s_medida22       : std_logic_vector(3 downto 0);
 	signal s_ascii_medida0 : std_logic_vector(7 downto 0);
 	signal s_ascii_medida1 : std_logic_vector(7 downto 0);
 	signal s_ascii_medida2 : std_logic_vector(7 downto 0);
+	signal s_ascii_medida20 : std_logic_vector(7 downto 0);
+	signal s_ascii_medida21 : std_logic_vector(7 downto 0);
+	signal s_ascii_medida22 : std_logic_vector(7 downto 0);
 	signal s_dado          : std_logic_vector(7 downto 0);
 
-	constant final : std_logic_vector(7 downto 0) := "00100011";
+	constant final   : std_logic_vector(7 downto 0) := "00100011";
 	
 begin
 
@@ -107,17 +116,25 @@ begin
 		pronto 	  => s_pronto_medida,
 		db_reset  => open,
 		db_medir  => db_medir,
+		db_cont => db_cont,
 		db_estado => db_estado_medida
 	);
 
 	s_medida0 <= s_medida_total(3 downto 0);
 	s_medida1 <= s_medida_total(7 downto 4);
 	s_medida2 <= s_medida_total(11 downto 8);
+	s_medida20 <= medida_dois(3 downto 0);
+	s_medida21 <= medida_dois(7 downto 4);
+	s_medida22 <= medida_dois(11 downto 8);
 
 	-- MUX para selecionar qual dos digitos de medida será transmitido
-	s_dado <= s_ascii_medida2 when s_contagem = "00" else
-		      s_ascii_medida1 when s_contagem = "01" else
-		      s_ascii_medida0 when s_contagem = "10" else
+	s_dado <= s_ascii_medida2 when s_contagem = "000" else
+		      s_ascii_medida1 when s_contagem = "001" else
+		      s_ascii_medida0 when s_contagem = "010" else
+				final            when s_contagem = "011" else
+				s_ascii_medida22 when s_contagem = "100" else
+				s_ascii_medida21 when s_contagem = "101" else
+				s_ascii_medida20 when s_contagem = "110" else
 		      final;
 	
 	transmissor: tx_serial_7E2
@@ -135,8 +152,8 @@ begin
 	
 	contagem: contador_m
 	generic map(
-		M => 3,
-		N => 2
+		M => 7,
+		N => 3
 	)
 	port map(
 		clock  => clock,
@@ -163,6 +180,21 @@ begin
 	port map(
 		dado  => s_medida2,
 		saida => s_ascii_medida2
+	);
+	DADO3: ascii
+	port map(
+		dado  => s_medida20,
+		saida => s_ascii_medida20
+	);
+	DADO4: ascii
+	port map(
+		dado  => s_medida21,
+		saida => s_ascii_medida21
+	);
+	DADO5: ascii
+	port map(
+		dado  => s_medida22,
+		saida => s_ascii_medida22
 	);
 	
 	fim_medida 		 <= s_pronto_medida;

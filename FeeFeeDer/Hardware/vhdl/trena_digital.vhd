@@ -10,9 +10,11 @@ entity trena_digital is
 		trigger 		      : out std_logic;
 		saida_serial  	      : out std_logic;
 		pronto 			      : out std_logic;
+		medida_dois           : in  std_logic_vector(11 downto 0);
 		medida                : out std_logic_vector (11 downto 0);
 		db_estado 		      : out std_logic_vector (6 downto 0);
 		db_estado_medida      : out std_logic_vector (6 downto 0);
+		db_cont    : out std_logic_vector(10 downto 0);
 		db_estado_transmissor : out std_logic_vector (6 downto 0)
  );
 end entity trena_digital;
@@ -49,11 +51,13 @@ architecture trena_digital_behavioral of trena_digital is
 			fim_medida  	      : out std_logic;
 			fim_transmissao       : out std_logic;
 			trigger     	      : out std_logic;
+			medida_dois           : in  std_logic_vector(11 downto 0);
 			medida                : out std_logic_vector(11 downto 0);
 			db_estado_medida      : out std_logic_vector(3 downto 0);
 			db_estado_transmissor : out std_logic_vector(3 downto 0);
 			db_medir		      : out std_logic;
 			db_echo               : out std_logic;
+			db_cont    : out std_logic_vector(10 downto 0);
 			db_trigger            : out std_logic
 		);
 	end component;
@@ -113,10 +117,12 @@ begin
 		fim_transmissao       => s_fim_transmissao,
 		trigger               => s_trigger,
 		medida                => medida,
+		medida_dois => medida_dois,
 		db_estado_medida      => s_db_estado_medida,
 		db_estado_transmissor => s_db_estado_transmissor,
 		db_medir		      => open,
 		db_echo               => open,
+		db_cont => db_cont,
 		db_trigger            => open
 	);
 

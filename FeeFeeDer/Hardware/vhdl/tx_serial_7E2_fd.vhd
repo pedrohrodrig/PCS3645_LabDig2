@@ -81,8 +81,9 @@ begin
     -- vetor de dados a ser carregado
     s_dados(0)            <= '1';         -- repouso
     s_dados(1)            <= '0';         -- start bit
-    s_dados(8 downto 2)   <= dados_ascii; -- 7 bits
-	 s_dados(9)            <= paridade;    -- bit de paridade
+    s_dados(9 downto 2)   <= '0' & dados_ascii; -- 8 bits
+--    s_dados(8 downto 2)   <= dados_ascii; -- 7 bits
+--	 s_dados(9)            <= paridade;    -- bit de paridade
     s_dados(11 downto 10) <= "11";        -- stop bits
 
     U1: deslocador_n 

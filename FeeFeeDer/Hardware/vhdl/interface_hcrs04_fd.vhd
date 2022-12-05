@@ -9,6 +9,7 @@ entity interface_hcsr04_fd is
 		registra    : in std_logic;
 		zera			: in std_logic;
 		medida      : out std_logic_vector(11 downto 0);
+		db_cont     : out std_logic_vector(10 downto 0);
 		fim_medida  : out std_logic;
 		trigger     : out std_logic
     );
@@ -24,6 +25,7 @@ architecture interface_hcsr04_arch of interface_hcsr04_fd is
 			digito0     : out std_logic_vector(3 downto 0);
 			digito1     : out std_logic_vector(3 downto 0);
 			digito2     : out std_logic_vector(3 downto 0);
+		   db_cont     : out std_logic_vector(10 downto 0);
 			pronto      : out std_logic
 		);
 	 end component;
@@ -58,6 +60,7 @@ architecture interface_hcsr04_arch of interface_hcsr04_fd is
 	 signal tick, fim_bcd, zera_tick, conta_tick, arredonda, s_trigger: std_logic;
 	 signal dig0, dig1, dig2: std_logic_vector(3 downto 0);
 	 signal s_valor, s_medida, s_saida: std_logic_vector(11 downto 0);
+	 signal s_count : std_logic_vector(10 downto 0);
 
 begin
 
@@ -89,6 +92,19 @@ begin
 		
 		);
 		
+	registrador_cnt: registrador_n
+		generic map(
+			N => 11
+		)
+		port map(
+			 clock   => clock,  
+			 clear   => zera,
+			 enable  => registra,
+			 D       => s_count,
+			 Q       => db_cont
+		
+		);
+		
 	contador: contador_cm
 		port map (
 			clock 	  => clock, 
@@ -96,7 +112,8 @@ begin
 			reset      => zera, 
 			digito0    => dig0,  
 			digito1    => dig1,  
-			digito2    => dig2,  
+			digito2    => dig2,
+			db_cont    => s_count,
 			pronto     => fim_medida  
 			
 		);

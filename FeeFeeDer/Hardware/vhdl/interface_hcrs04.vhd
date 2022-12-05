@@ -12,6 +12,7 @@ entity interface_hcsr04 is
         pronto 	    : out std_logic;
 		db_reset    : out std_logic;
 		db_medir    : out std_logic;
+			db_cont    : out std_logic_vector(10 downto 0);
         db_estado   : out std_logic_vector (3 downto 0) -- estado da UC
     );
 end entity interface_hcsr04;
@@ -41,6 +42,7 @@ architecture interface_hcsr04_arch of interface_hcsr04 is
 			registra   : in std_logic;
 			zera	   : in std_logic;
 			medida     : out std_logic_vector(11 downto 0);
+			db_cont    : out std_logic_vector(10 downto 0);
 			fim_medida : out std_logic;
 			trigger    : out std_logic
    		);
@@ -67,6 +69,7 @@ begin
 			zera       => s_zera,
 			medida 	   => s_medida,
 			fim_medida => s_fim_medida,
+			db_cont => db_cont,
 			trigger    => s_trigger
 		);
 	

@@ -53,10 +53,10 @@ begin
   process(posicao)
   begin
     case posicao is
-      when "00" =>  s_largura <= 35000;  -- pulso de 0,700 ms 
+      when "00" =>  s_largura <= 73000;  -- pulso de 0,700 ms 
       when "01" =>  s_largura <= 45700;  -- pulso de 0,914 ms 
 		  when "10" =>  s_largura <= 99300;  -- pulso de 1,986 ms 
-		  when "11" =>  s_largura <= 110000; -- pulso de 2,200 ms 
+		  when "11" =>  s_largura <= 35000; -- pulso de 2,200 ms 
       when others => s_largura <= 0;      -- nulo saida 0
     end case;
   end process;

@@ -10,6 +10,7 @@ entity contador_cm is
 		digito0     : out std_logic_vector(3 downto 0);
 		digito1     : out std_logic_vector(3 downto 0);
 		digito2     : out std_logic_vector(3 downto 0);
+		db_cont     : out std_logic_vector(10 downto 0);
 		pronto      : out std_logic
     );
 end entity contador_cm;
@@ -39,6 +40,7 @@ architecture contador_cm_arch of contador_cm is
         digito0 : out std_logic_vector(3 downto 0);
         digito1 : out std_logic_vector(3 downto 0);
         digito2 : out std_logic_vector(3 downto 0);
+		  db_cont : out std_logic_vector(10 downto 0);
         fim     : out std_logic
     );
 	 end component;
@@ -88,6 +90,7 @@ begin
 			digito0  => dig0,
 			digito1  => dig1,
 			digito2  => dig2,
+			db_cont  => db_cont,
 			fim		=> open
 		);
 		

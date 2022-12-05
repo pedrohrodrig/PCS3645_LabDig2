@@ -22,9 +22,10 @@ entity contador_bcd_3digitos is
         clock   : in  std_logic;
         zera    : in  std_logic;
         conta   : in  std_logic;
-        digito0 : out std_logic_vector(3 downto 0);
-        digito1 : out std_logic_vector(3 downto 0);
-        digito2 : out std_logic_vector(3 downto 0);
+        digito0 : out std_logic_vector(3  downto 0);
+        digito1 : out std_logic_vector(3  downto 0);
+        digito2 : out std_logic_vector(3  downto 0);
+		  db_cont : out std_logic_vector(10 downto 0);
         fim     : out std_logic
     );
 end entity;
@@ -32,6 +33,7 @@ end entity;
 architecture comportamental of contador_bcd_3digitos is
 
     signal s_dig2, s_dig1, s_dig0 : unsigned(3 downto 0);
+	 signal s_cont : unsigned(10 downto 0);
 
 begin
 
@@ -42,6 +44,7 @@ begin
                 s_dig0 <= "0000";
                 s_dig1 <= "0000";
                 s_dig2 <= "0000";
+					 s_cont <= (others => '0');
             elsif ( conta = '1' ) then
                 if (s_dig0 = "1001") then
                     s_dig0 <= "0000";
@@ -58,6 +61,8 @@ begin
                 else
                     s_dig0 <= s_dig0 + 1;
                 end if;
+					 
+					 s_cont <= s_cont + 1;
             end if;
         end if;
     end process;
@@ -70,5 +75,6 @@ begin
     digito2 <= std_logic_vector(s_dig2);
     digito1 <= std_logic_vector(s_dig1);
     digito0 <= std_logic_vector(s_dig0);
+	 db_cont <= std_logic_vector(s_cont);
 
 end architecture comportamental;
