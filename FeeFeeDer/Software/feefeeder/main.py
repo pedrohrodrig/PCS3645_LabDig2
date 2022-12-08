@@ -27,9 +27,9 @@ dist_rev2 = 0
 
 # Variáveis usadas pela própria interface:
 global porcentagemA
-porcentagemA = 1
+porcentagemA = 50
 global porcentagemB
-porcentagemB = 1
+porcentagemB = 50
 
 # Login no MQTT
 user = "grupo1-bancadaA5" # TODO: Ajustar os parametros de login
@@ -41,27 +41,8 @@ KeepAlive = 60
 # MQTT (Callback de conexao)
 def on_connect(client, userdata, flags, rc):
     print("Conectado com codigo " + str(rc))
-    # TODO: Subscrever somente para os canais que seräo usados
-    client.subscribe(user+"/E0", qos=0)
-    client.subscribe(user+"/E1", qos=0)
-    client.subscribe(user+"/E2", qos=0)
-    client.subscribe(user+"/E3", qos=0)
-    client.subscribe(user+"/E4", qos=0)
-    client.subscribe(user+"/E5", qos=0)
-    client.subscribe(user+"/E6", qos=0)
-    client.subscribe(user+"/E7", qos=0)
     client.subscribe(user+"/RX", qos=0)
-    client.subscribe(user+"/S0", qos=0)
-    client.subscribe(user+"/S1", qos=0)
-    client.subscribe(user+"/S2", qos=0)
-    client.subscribe(user+"/S3", qos=0)
-    client.subscribe(user+"/S4", qos=0)
-    client.subscribe(user+"/S5", qos=0)
-    client.subscribe(user+"/S6", qos=0)
-    client.subscribe(user+"/S7", qos=0)
     client.subscribe(user+"/TX", qos=0)
-    client.subscribe(user+"/led", qos=0)
-    #client.subscribe(user+"/TX", qos=0)
 
 # MQTT (Callback de mensagem)
 def on_message(client, userdata, msg):
@@ -70,18 +51,13 @@ def on_message(client, userdata, msg):
     # Variaveis Globais
     global porcentagemA
     global porcentagemB
-    
-    if str(msg.topic+" "+str(msg.payload)) == user+"/S0 b'1'" : # Caso receba o binario 1
-        porcentagemA = 50
-        porcentagemB = 50
-    
-    elif str(msg.topic+" "+str(msg.payload)) == user+"/S1 b'0'" : # Caso receba o binario 0
-        porcentagemA = 1
-        porcentagemB = 99
-    
-    elif str(msg.topic+" "+str(msg.payload)) == user+"/S3 b'0'" : # Caso receba o binario 0
-        porcentagemA = 78
-        porcentagemB = 63
+
+    if(user+"/TX" == msg.topic):
+        porcentagemB = porcentage(int(msg.payload), 30)
+        print(f'Reservatorio em {porcentagemB}%')
+    elif(user+"/RX" == msg.topic):
+        porcentagemA = porcentage(int(msg.payload), 17)
+        print(f'Comedouro em {porcentagemA}%')
 
 # MQTT Cria cliente
 client = mqtt.Client()
@@ -118,14 +94,19 @@ def image_load(porcentage):
         return "imagens/Reservatório - 70.png"
 
 
-def porcentage(dist):
-    return 100 - dist
+def porcentage(dist, max):
+    porcentagem = round((100 * dist) / max) - 100
+
+    if porcentagem < 0:
+        porcentagem = porcentagem * (-1)
+
+    return porcentagem
 
 
 class Main(Screen):
     i = 0
-    porcentageA = porcentage(25)
-    porcentageB = porcentage(50)
+    porcentageA = porcentage(25, 100)
+    porcentageB = porcentage(50, 100)
     contentA = StringProperty()
     contentB = StringProperty()
     imageA = image_load(porcentageA)
